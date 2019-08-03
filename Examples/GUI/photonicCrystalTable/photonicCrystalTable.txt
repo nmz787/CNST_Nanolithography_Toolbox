@@ -1,0 +1,5 @@
+diameter(nm)	sides	spacing(nm)	sizeX(um)	sizeY(um)	separation(nm)	layer
+250		64	160		225		2.5		400		1
+200		32	200		100		4.4		500		2
+150		44	200		100		5		600		4
+80		32	200		100		8		700		8

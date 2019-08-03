@@ -1,0 +1,360 @@
+0.001 gdsReso
+
+0.0100 shapeReso
+
+
+<sBendTest struct>
+# ******************************
+# ******** S-BENDS
+# ******************************
+# 2 S-Bend constructors
+#
+# <x1 y1 x2 y2 width rotationDegrees sBend>
+# <x1 y1 length height width rotationDegrees sBendLH>
+#
+0.001 shapeReso
+1 layer
+<-5.0 -5.0 15 5 0.5 0 sBend>
+2 layer
+<15.0 5.0 40.0 -5.0 0.5 0 sBend>
+#
+6 layer
+<40.0 -5.0 20.0 20.0 0.5 0 sBendLH>
+8 layer
+<60.0 15.0 20.0 -20.0 0.5 0 sBendLH>
+
+11 layer
+<0 -40.0 20 -30 0.5 90 sBend>
+
+
+# ******************************
+# ******** S-BEND INVERSE 
+# ******************************
+#
+# <x1 y1 L H waveGuideWidth exposureSleeveWidth rotationDegrees sBendInv>
+#
+<sBendInvTest struct>
+<0 0 10 5 0.4 1.0 0 sBendInv>
+
+
+# ******************************
+# ******** S-BEND INVERSE SLOT
+# ******************************
+#
+# <x1 y1 L H waveGuideWidth gap exposureSleeveWidth rotationDegrees sBendInvSlot>
+#
+<sBendInvSlotTest struct>
+<0 0 10 5 0.2 0.4 1.0 0 sBendInvSlot>
+
+
+<yBends struct>
+# ******************************
+# ******** Y-BENDS
+# ******************************
+# 2 Y-Bend constructors with rotation about point (x1,y1)
+#
+# <x1 y1 x2 y2 x3 y3 width rotationDegrees yBend>
+# <x1 y1 length2 height2 length3 height3 width rotationDegrees yBendLH>
+#
+11 layer
+<0 0 5 10 10 -20 0.5 0 yBend>
+2 layer
+<20 0 10 5 10 -5 0.5 0 yBendLH>
+7 layer
+<40 40 20 10 40 -20 0.5 44 yBendLH>
+
+
+# ******************************
+# ******** Y-BENDS INVERSE
+# ******************************
+# 2 Y-Bend constructors with rotation about point (x1,y1)
+#
+# <x1 y1 length2 height2 length3 height3 width exposureSleeveWidth rotationDegrees yBendInv>
+#
+11 layer
+<yBendInvTest struct>
+<0 0 10 5 15 -15 0.4 1.0 0 yBendInv>
+
+# ******************************
+# ******** Y-BENDS INVERSE SLOT
+# ******************************
+#
+# <x1 y1 length2 height2 length3 height3 width gap exposureSleeveWidth rotationDegrees yBendInvSlot>
+#
+<yBendInvSlotTest struct>
+<0 0 10 5 15 -15 0.2 0.4 1.0 0 yBendInvSlot>
+
+# ******************************
+# ******** Y-BEND90
+# ******************************
+#
+# <x y r1 r2 width numberOfSides rotationDegrees yBend>
+#
+11 layer
+<yBends90test struct>
+<0 0 10 10 1 88 0 yBend90>
+
+# ******************************
+# ******** Y-BEND INVERSE 90
+# ******************************
+#
+# <x y r1 r2 width sleeveWidth numberOfSides rotationDegrees yBend>
+#
+<yBendsInv90test struct>
+<0 0 10 10 0.2 1 88 0 yBendInv90>
+
+# ******************************
+# **** Y-BEND INVERSE SLOT 90
+# ******************************
+#
+# <x y r1 r2 slotWidth gap sleeveWidth numberOfSides rotationDegrees yBend>
+#
+<yBendsInvSlot90test struct>
+<0 0 10 10 0.44 0.2 1 88 0 yBendInvSlot90>
+
+
+<90degreeBendTest struct>
+# ******************************
+# ******** 90 DEGREE BEND
+# ******************************
+# 2 90-degree bend constructors with rotation about point (x1,y1)
+#
+# <x1 y1 x2 y2 width rotationDegrees 90degreeBend>
+# <x y length height waveGuideWidth rotationDegrees 90degreeBendLH>
+#
+0.001 shapeReso
+<0 0 5 10 0.5 0 90degreeBend>
+4 layer
+#0.100 shapeReso
+<5 0 10 5 0.5 0 90degreeBendLH>
+
+# **************************************
+# ******** 90 DEGREE BEND INVERSE
+# **************************************
+# 2 90-degree bend INVERSE constructors with rotation about point (x1,y1)
+#
+# <x y length height waveGuideWidth exposureSleeveWidth rotationDegrees 90degreeBendInv>
+#
+11 layer
+<90degreeBendInvTest struct>
+<0 0 10 5 0.4 1.0 0 90degreeBendInv>
+
+# **************************************
+# ******** 90 DEGREE BEND INVERSE SLOT
+# **************************************
+# 2 90-degree bend INVERSE SLOT constructors with rotation about point (x1,y1)
+#
+# <x y length height waveGuideWidth gap exposureSleeveWidth rotationDegrees 90degreeBendInvSlot>
+#
+<90degreeBendInvSlotTest struct>
+<0 0 10 5 0.2 0.4 1.0 0 90degreeBendInvSlot>
+
+
+<180degreeBendTest struct>
+# ******************************
+# ******** 180 DEGREE BEND
+# ******************************
+# 180-degree bend constructors with rotation about point (x,y)
+#
+# <x y length1 length2 diameter waveGuideWidth numberOfPointsForCurvedSection rotationDegrees 180degreeBend>
+#
+<0 0 22 44 8 0.5 64 0 180degreeBend>
+
+# **************************************
+# ******** 180 DEGREE BEND INVERSE
+# **************************************
+# 180-degree bend INVERSE constructors with rotation about point (x,y)
+#
+# <x y length1 length2 diameter waveGuideWidth exposureSleeveWidth numberOfPointsForCurvedSection rotationDegrees 180degreeBendInv>
+#
+11 layer
+<180degreeBendInvTest struct>
+<0 0 22 44 8 0.5 1.1 64 0 180degreeBendInv>
+
+# **************************************
+# ******** 180 DEGREE BEND INVERSE SLOT
+# **************************************
+# 180-degree bend INVERSE SLOT constructors with rotation about point (x1,y1)
+#
+# <x y length1 length2 diameter waveGuideWidth gap exposureSleeveWidth numberOfPointsForCurvedSection rotationDegrees 180degreeBendInvSlot>
+#
+<180degreeBendInvSlotTest struct>
+<0 0 22 44 8 0.5 0.22 1.1 64 0 180degreeBendInvSlot>
+
+<waveguideTest struct>
+# ******************************
+# ******** WAVEGUIDE
+# ******************************
+# waveguide with rotation about point (x1,y1)
+#	waveguide horizontal with condition x1=x2, for a vertical waveguide use rotationDegrees=90, i.e. rotation about (x1,y1)
+#		
+# <x1 y1 x2 y2 width rotationDegrees endCapLEFT endCapRIGHT waveguide>
+#
+0.001 shapeReso
+<0 0 4 0 0.4 0 0 1  waveguide>
+
+<waveguideSlotTest struct>
+# ******************************
+# ******** WAVEGUIDE SLOT
+# ******************************
+# waveguide with rotation about point (x1,y1)
+#	waveguide horizontal with condition x1=x2, for a vertical waveguide use rotationDegrees=90, i.e. rotation about (x1,y1)
+#		
+# <x1 y1 x2 y2 width slotWidth rotationDegrees endCapLEFT endCapRIGHT waveguide>
+#
+<-1 2 4 2 0.4 0.1 0 0 1 waveguideSlot>
+
+<waveguideInvTest struct>
+# ******************************
+# ******** WAVEGUIDE INVERSE
+# ******************************
+# waveguide with rotation about point (x1,y1)
+#	waveguide horizontal with condition x1=x2, for a vertical waveguide use rotationDegrees=90, i.e. rotation about (x1,y1)
+#		
+# <x1 y1 x2 y2 width exposureSleeveWidth rotationDegrees endCapLEFT endCapRIGHT waveguide>
+#
+<-2 0 4 0 0.4 1.1 0 0 1 waveguideInv>
+
+<waveguideInvSlotTest struct>
+# ******************************
+# ******** WAVEGUIDE INVERSE SLOT
+# ******************************
+# waveguide with rotation about point (x1,y1)
+#	waveguide horizontal with condition x1=x2, for a vertical waveguide use rotationDegrees=90, i.e. rotation about (x1,y1)
+#		
+# <x1 y1 x2 y2 width slotWidth exposureSleeveWidth rotationDegrees endCapLEFT endCapRIGHT waveguide>
+#
+<-2 0 4 0 0.4 0.1 1.1 0 0 1 waveguideInvSlot>
+
+
+<linearTaperTest struct>
+# ******************************
+# ******** LINEAR TAPER
+# ******************************
+# linear taper with rotation about point (x1,y1)
+#	taper is either horizontal or vertical, condition x1=x2 or y1=y2 must be satisfied
+#		
+# <x1 y1 x2 y2 width1 width2 rotationDegrees linearTaper>
+#
+<0 0 10 0 0.2 1.0 90 linearTaper>
+
+<linearTaperSlotTest struct>
+# ******************************
+# ******** LINEAR TAPER SLOT
+# ******************************
+# linear taper with rotation about point (x1,y1)
+#	taper is either horizontal or vertical, condition x1=x2 or y1=y2 must be satisfied
+#		
+# <x1 y1 x2 y2 width1 width2 slotWidth1 slotWidth2 rotationDegrees linearTaper>
+#
+<0 0 5 0 0.4 1.0 0.1 0.2 0 linearTaperSlot>
+
+<linearTaperInvSlotTest struct>
+# ******************************
+# ******** LINEAR TAPER SLOT
+# ******************************
+# linear taper with rotation about point (x1,y1)
+#	taper is either horizontal or vertical, condition x1=x2 or y1=y2 must be satisfied
+#		
+# <x1 y1 x2 y2 width1 width2 gap slotWidth1 slotWidth2 rotationDegrees linearTaper>
+#
+<0 0 10 0 1.1 1.4 0.1 0.1 0.2 0 linearTaperInvSlot>
+
+
+<exponentialTaperTest struct>
+# ******************************
+# ******** EXPONENTIAL TAPER
+# ******************************
+# exponential taper with rotation about point (x1,y1)
+#
+# <x1 y1 length widthStart widthEnd numberOfPoints rotationDegrees exponentialTaper>
+#
+<0 0 10 0.1 2.2 88 0 exponentialTaper>
+
+<exponentialTaperInvTest struct>
+# ******************************
+# ******** EXPONENTIAL TAPER INVERSE
+# ******************************
+# inverse exponential taper with rotation about point (x1,y1)
+#
+# <x1 y1 length widthStart widthEnd numberOfPoints exposureSleeveWidth rotationDegrees exponentialTaper>
+#
+<0 0 10 0.5 4 200 1 0 exponentialTaperInv>
+
+<exponentialTaperInvSlotTest struct>
+# ******************************
+# ******** EXPONENTIAL TAPER INVERSE SLOT
+# ******************************
+# inverse exponential taper with a slot and rotation about point (x1,y1)
+#
+# <x1 y1 length widthStart widthEnd numberOfPoints inverseWidth slotW1 slotW2 rotationDegrees exponentialTaper>
+#
+<0 0 10 0.5 4 200 1.0 0.2 2.0 0 exponentialTaperInvSlot>
+
+
+<sBendTaperTest struct>
+# ******************************
+# ******** S-BEND TAPER
+# ******************************
+# s-Bend taper with rotation about point (x1,y1)
+#
+# <x1 y1 length height widthStart widthEnd rotationDegrees sBendTaper>
+#
+<0 0 10 4 0.4 2.2 0 sBendTaper>
+
+
+0.001 shapeReso
+<sBendFunnelTest struct>
+# ******************************
+# ******** S-BEND FUNNEL
+# ******************************
+# s-Bend funnel with rotation about point (x1,y1)
+#
+# <x1 y1 length height waveGuideWidth rotationDegrees sBendFunnel>
+#
+<0 0 10 4.4 0.4 0 sBendFunnel>
+
+
+
+
+# **************** **************** **************** ****************
+# Waveguide expander
+# **************** **************** **************** ****************
+#
+# <x y waveguideWidth waveguideLength deltaLength a b TEmodeAngle beamWaistW0 waveLengthInNM baseHeight THETAxy wgExpander>
+# Parameters in micrometers: waveguideWidth, waveguideLength, deltaLength, w0, baseHeight
+# Parameter in nanometers: waveLengthInNM
+<waveguideExpander struct>
+<0 0 0.3 400 5 0.05999 -1.089266477061682e+07 29.22 100 780 3 0 wgExpander>
+
+
+
+
+# **************** **************** **************** ****************
+# Directional Couplers
+# **************** **************** **************** ****************
+#
+#
+# <x y L1 w1 we1 L2 L3 w2 we2 g r numberOfSides THETAxy directionalCoupler1>
+# <x y L1 w1 we1 L2 L3 w2 we2 g r numberOfSides THETAxy directionalCoupler2>
+#
+<directionalCouplerVersion1 struct>
+<0 0 80 0.4 2 8 15 0.5 2.2 0.44 8 44 0 directionalCoupler1>
+#
+<directionalCouplerVersion2 struct>
+<0 0 80 0.4 2 8 15 0.5 2.2 0.44 8 44 0 directionalCoupler2>
+
+#
+# Symmetric U-Shaped Directional Couplers - version 3
+# <x y w we g L1 L2 r numberOfSides THETAxy directionalCoupler3>
+#
+# Symmetric S-Bend-Shaped Directional Couplers - version 4
+# <x y w we g L1 LB HB THETAxy directionalCoupler4>
+#
+<directionalCouplerVersion3 struct>
+<0 0 0.2 0.44 0.2 7 2.2 3.4 44 0 directionalCoupler3>
+<directionalCouplerVersion4 struct>
+<0 0 0.2 0.44 0.2 20 14 10 0 directionalCoupler4>
+
+
+

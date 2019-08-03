@@ -1,0 +1,33 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# ******** GRATING COUPLERS WITH WAVEGUIDES
+#
+# Grating Coupler + INVERSE waveguide with a sleeve
+# <x y waveguideWidth waveguideLength waveguideHeight sleeveWidth waveLengthInMicrometers effectiveIndex claddingIndex thetaC Radius gratingPeriod ratioDefiningTheDutyCycle numberOfGeneratedGratingLines numberOfSidesForGratings waveguideGDSlayer gratingGDSlayer ENDCAPS rotationDegreesAboutXY gratingCWGinv>
+#
+#
+<GratCouplerWG struct>
+<0 0 0.52 100 20 0.78 1.730 1.000 80 50 0.460 0.3 70 200 4 7 0 0 gratingCWG>
+<GratCouplerWGendCap struct>
+<0 0 0.52 100 20 0.78 1.730 1.000 80 50 0.460 0.3 70 200 4 7 1 0 gratingCWG>
+
+
+#
+# Grating Coupler + waveguide
+# <x y waveguideWidth waveguideLength waveguideHeight sleeveWidth waveLengthInMicrometers effectiveIndex claddingIndex thetaC Radius gratingPeriod ratioDefiningTheDutyCycle numberOfGeneratedGratingLines numberOfSidesForGratings waveguideGDSlayer gratingGDSlayer ENDCAPS rotationDegreesAboutXY gratingCWGinv>
+#
+#
+<GratCouplerWGinverse struct>
+<0 0 0.52 100 20 2.0 0.78 1.730 1.000 80 50 0.460 0.3 70 200 4 7 0 0 gratingCWGinv>
+<GratCouplerWGinverseEndCap struct>
+<0 0 0.52 100 20 2.0 0.78 1.730 1.000 80 50 0.460 0.3 70 200 4 7 1 0 gratingCWGinv>
+
+
+
+
+# ******** APODIZED GRATING
+# <x y gratingLength grantingLengthINCREMENT gratingLineHeight dutyCycleCutoff p1 p2 p3 p4 d1 d2 d3 d4 d5 rotationDegreesAboutXY apodizedGrating>
+1 layer
+<apodizedGratingTest struct>
+<0 0 300 0.010 300 0.05 4.3131e-7 0.044740 0.063610 0.057037 0.26573 0.69714 0.32621 -0.27641 -0.010560 0 apodizedGrating>

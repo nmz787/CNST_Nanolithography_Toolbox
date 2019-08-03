@@ -1,0 +1,33 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+11 layer
+
+<bezierCurveTest struct>
+# ******** BEZIER CURVE
+# Bezier curve with rotation about point (x1,y1)
+#
+# <x1 y1 cx1 cy1 cx2 cy2 x2 y2 width rotationDegrees bezierCurve>
+#
+<0 0 4 10 7 -22 10 0 0.4 0 bezierCurve>
+
+<15 0 25 10 15 10 25 0 0.4 0 bezierCurve>
+
+
+<bezierCurveInvTest struct>
+# ******** BEZIER CURVE INVERSE
+# Bezier curve inverse with rotation about point (x1,y1)
+#
+# <x1 y1 cx1 cy1 cx2 cy2 x2 y2 sleeveWidth slotWidth rotationDegrees bezierCurveInv>
+#
+<0 0 20 0 20 40 70 40 8 1 0 bezierCurveInv>
+
+<bezierCurveInvSlotTest struct>
+# ******** BEZIER CURVE INVERSE SLOT
+# Bezier curve inverse slot with rotation about point (x1,y1)
+#
+# <x1 y1 cx1 cy1 cx2 cy2 x2 y2 sleeveWidth slotWidth gap rotationDegrees bezierCurveInvSlot>
+#
+<0 0 20 0 20 40 40 40 10 2 1 0 bezierCurveInvSlot>
+

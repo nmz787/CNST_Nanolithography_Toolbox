@@ -1,0 +1,21 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+11 layer
+
+# Function in x,y
+# <{{y(x)}} x y lowerLimit upperLimit numberOfSegments width CAP JOIN thetaXY functionXY>
+# Function in r, theta - theta variable is represented by t
+# <{{r(t)}} x y lowerLimit upperLimit numberOfSegments width CAP JOIN thetaXY functionRT>
+# CAP VALUES:	BUTT=0	ROUND=1	SQUARE=2
+# JOIN VLUES:	MITER=0	ROUND=1	BEVEL=2
+
+# XY plot - rotated 180 degrees about x = 10, y = -10
+<functionXY struct>
+<{{14*Math.sin(x/2)*Math.exp(-x/44)}} 10 -10 0 88 1000 0.22 1 0 180 functionXY>
+
+# R-THETA plot - rotated 22.5 degrees about x = 10, y = -10
+<functionRT struct>
+<{{11*Math.sin(4*t)}} 10 -10 0 6.283185307 1000 0.22 1 0 22.5 functionRT>
+

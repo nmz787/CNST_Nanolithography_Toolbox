@@ -1,0 +1,26 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# BOOLEANS AND AFFINE TRANSFORMS OF GENERAL AREA COPIES
+
+<test2devices struct>
+
+# create an 6 sided ellipse in layer 11
+11 layer
+0 0 2 4 6 0 ellipse
+
+# create a pentagon in layer 7
+7 layer
+1 0 1.5 1.5 5 0 ellipse
+
+# scriptingMultiFile55.cnst does not exist, hence an error will be reported within the log file
+<scriptingMultiFile55 fileName>
+
+# calling file scriptingMultiFile4.cnst
+<scriptingMultiFile4 fileName>
+
+<test2dev2 struct>
+# 6 sides rotated -44 degrees
+1 0 1.5 8 6 -44 ellipse
+
+

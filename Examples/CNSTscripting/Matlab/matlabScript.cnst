@@ -1,0 +1,210 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# Creating a simple ellipse with Matlab
+<matlabEllipse struct>
+11 layer
+0 0 2 4 44 0 ellipse
+
+# Creating array of 100 ellipses along the diagonal
+<matlabEllipseArray struct>
+1 layer
+1 1  0.4 4 44 0 ellipse
+2 layer
+2 2  0.4 4 44 0 ellipse
+3 layer
+3 3  0.4 4 44 0 ellipse
+4 layer
+4 4  0.4 4 44 0 ellipse
+5 layer
+5 5  0.4 4 44 0 ellipse
+6 layer
+6 6  0.4 4 44 0 ellipse
+7 layer
+7 7  0.4 4 44 0 ellipse
+8 layer
+8 8  0.4 4 44 0 ellipse
+9 layer
+9 9  0.4 4 44 0 ellipse
+10 layer
+10 10  0.4 4 44 0 ellipse
+11 layer
+11 11  0.4 4 44 0 ellipse
+12 layer
+12 12  0.4 4 44 0 ellipse
+13 layer
+13 13  0.4 4 44 0 ellipse
+14 layer
+14 14  0.4 4 44 0 ellipse
+15 layer
+15 15  0.4 4 44 0 ellipse
+16 layer
+16 16  0.4 4 44 0 ellipse
+17 layer
+17 17  0.4 4 44 0 ellipse
+18 layer
+18 18  0.4 4 44 0 ellipse
+19 layer
+19 19  0.4 4 44 0 ellipse
+20 layer
+20 20  0.4 4 44 0 ellipse
+21 layer
+21 21  0.4 4 44 0 ellipse
+22 layer
+22 22  0.4 4 44 0 ellipse
+23 layer
+23 23  0.4 4 44 0 ellipse
+24 layer
+24 24  0.4 4 44 0 ellipse
+25 layer
+25 25  0.4 4 44 0 ellipse
+26 layer
+26 26  0.4 4 44 0 ellipse
+27 layer
+27 27  0.4 4 44 0 ellipse
+28 layer
+28 28  0.4 4 44 0 ellipse
+29 layer
+29 29  0.4 4 44 0 ellipse
+30 layer
+30 30  0.4 4 44 0 ellipse
+31 layer
+31 31  0.4 4 44 0 ellipse
+32 layer
+32 32  0.4 4 44 0 ellipse
+33 layer
+33 33  0.4 4 44 0 ellipse
+34 layer
+34 34  0.4 4 44 0 ellipse
+35 layer
+35 35  0.4 4 44 0 ellipse
+36 layer
+36 36  0.4 4 44 0 ellipse
+37 layer
+37 37  0.4 4 44 0 ellipse
+38 layer
+38 38  0.4 4 44 0 ellipse
+39 layer
+39 39  0.4 4 44 0 ellipse
+40 layer
+40 40  0.4 4 44 0 ellipse
+41 layer
+41 41  0.4 4 44 0 ellipse
+42 layer
+42 42  0.4 4 44 0 ellipse
+43 layer
+43 43  0.4 4 44 0 ellipse
+44 layer
+44 44  0.4 4 44 0 ellipse
+45 layer
+45 45  0.4 4 44 0 ellipse
+46 layer
+46 46  0.4 4 44 0 ellipse
+47 layer
+47 47  0.4 4 44 0 ellipse
+48 layer
+48 48  0.4 4 44 0 ellipse
+49 layer
+49 49  0.4 4 44 0 ellipse
+50 layer
+50 50  0.4 4 44 0 ellipse
+51 layer
+51 51  0.4 4 44 0 ellipse
+52 layer
+52 52  0.4 4 44 0 ellipse
+53 layer
+53 53  0.4 4 44 0 ellipse
+54 layer
+54 54  0.4 4 44 0 ellipse
+55 layer
+55 55  0.4 4 44 0 ellipse
+56 layer
+56 56  0.4 4 44 0 ellipse
+57 layer
+57 57  0.4 4 44 0 ellipse
+58 layer
+58 58  0.4 4 44 0 ellipse
+59 layer
+59 59  0.4 4 44 0 ellipse
+60 layer
+60 60  0.4 4 44 0 ellipse
+61 layer
+61 61  0.4 4 44 0 ellipse
+62 layer
+62 62  0.4 4 44 0 ellipse
+63 layer
+63 63  0.4 4 44 0 ellipse
+64 layer
+64 64  0.4 4 44 0 ellipse
+65 layer
+65 65  0.4 4 44 0 ellipse
+66 layer
+66 66  0.4 4 44 0 ellipse
+67 layer
+67 67  0.4 4 44 0 ellipse
+68 layer
+68 68  0.4 4 44 0 ellipse
+69 layer
+69 69  0.4 4 44 0 ellipse
+70 layer
+70 70  0.4 4 44 0 ellipse
+71 layer
+71 71  0.4 4 44 0 ellipse
+72 layer
+72 72  0.4 4 44 0 ellipse
+73 layer
+73 73  0.4 4 44 0 ellipse
+74 layer
+74 74  0.4 4 44 0 ellipse
+75 layer
+75 75  0.4 4 44 0 ellipse
+76 layer
+76 76  0.4 4 44 0 ellipse
+77 layer
+77 77  0.4 4 44 0 ellipse
+78 layer
+78 78  0.4 4 44 0 ellipse
+79 layer
+79 79  0.4 4 44 0 ellipse
+80 layer
+80 80  0.4 4 44 0 ellipse
+81 layer
+81 81  0.4 4 44 0 ellipse
+82 layer
+82 82  0.4 4 44 0 ellipse
+83 layer
+83 83  0.4 4 44 0 ellipse
+84 layer
+84 84  0.4 4 44 0 ellipse
+85 layer
+85 85  0.4 4 44 0 ellipse
+86 layer
+86 86  0.4 4 44 0 ellipse
+87 layer
+87 87  0.4 4 44 0 ellipse
+88 layer
+88 88  0.4 4 44 0 ellipse
+89 layer
+89 89  0.4 4 44 0 ellipse
+90 layer
+90 90  0.4 4 44 0 ellipse
+91 layer
+91 91  0.4 4 44 0 ellipse
+92 layer
+92 92  0.4 4 44 0 ellipse
+93 layer
+93 93  0.4 4 44 0 ellipse
+94 layer
+94 94  0.4 4 44 0 ellipse
+95 layer
+95 95  0.4 4 44 0 ellipse
+96 layer
+96 96  0.4 4 44 0 ellipse
+97 layer
+97 97  0.4 4 44 0 ellipse
+98 layer
+98 98  0.4 4 44 0 ellipse
+99 layer
+99 99  0.4 4 44 0 ellipse
+100 layer
+100 100  0.4 4 44 0 ellipse

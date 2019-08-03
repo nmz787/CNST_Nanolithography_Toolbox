@@ -1,0 +1,24 @@
+0.001 gdsReso
+
+0.0100 shapeReso
+
+1 fontOutline
+
+
+<outlineAutoOut struct>
+{4	4			Serif	44.44	0	-34	-70	-100	100	100	autoOut	labelOutline}
+<outlineAutoRC struct>
+{4	4		Arial	44.44	0	0	0	0	110	110	autoRowCol	labelOutline}
+#
+<outlineAutoOutLett struct>
+{4	4			Serif	44.44	0	0	-70	-100	100	100	autoOutLett	labelOutline}
+<outlineAutoRCLett struct>
+{4	4		Arial	44.44	0	0	0	0	110	110	autoRowColLett	labelOutline}
+
+
+<outlineOuter struct>
+{L1	lb2	lb3	L4	L5	lb6	lb7	lb8	4	4		Serif	44.44	-15	-34	-88	-100	100	100	out	labelOutline}
+
+<outlineRC struct>
+{CNST	NIST	MEMS	NEMS	2	2		Arial	44.44	5	-5	0	0	200	200	rowCol	labelOutline}
+

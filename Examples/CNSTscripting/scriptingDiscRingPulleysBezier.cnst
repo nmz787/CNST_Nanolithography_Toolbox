@@ -1,0 +1,199 @@
+0.001 gdsReso
+0.010 shapeReso
+2 layer
+
+
+
+
+# ******** INFINITE (R2 = infinity) RING DISC
+# straight waveguide above the ring and disc
+#
+# 2 constructors:
+#
+# <x y discRadius numberOfDiscSides gap waveGuideLength waveGuideWidth endcap discInfinite>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveGuideLength waveGuideWidth endcap ringInfinite>
+#
+<discInfiniteTest struct>
+<0 0 10 128 0.2 40 0.5 0 discInfinite>
+#
+<ringInfiniteTest struct>
+<0 0 10 0.4 64 0.2 40 0.5 0 ringInfinite>
+
+
+
+
+# ******** INFINITE (R2 = infinity) RING DISC INVERSE
+# straight INVERSE waveguide above the ring and disc
+#
+# 2 constructors:
+#
+# <x y discRadius numberOfDiscSides gap waveGuideLength waveGuideWidth exposureSleeveWidth endcap discInfiniteInv>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveGuideLength waveGuideWidth exposureSleeveWidth endcap ringInfiniteInv>
+#
+<INVERSEdiscInfiniteTest struct>
+<0 0 10 128 0.2 40 0.5 1.0 0 discInfiniteInv>
+#
+<INVERSEringInfiniteTest struct>
+<0 0 10 0.4 64 0.2 40 0.5 1.0 0 ringInfiniteInv>
+
+
+
+
+# ******** INFINITE (R2 = infinity) RING DISC INVERSE POSITIVE TONE RESIST
+# straight INVERSE POSITIVE TONE RESIST waveguide above the ring and disc - used with positive tone resist
+#
+# 2 constructors:
+#
+# <x y discRadius ringDiscSleeveWidth numberOfDiscSides gap waveGuideLength waveGuideWidth exposureSleeveWidth endcap discInfiniteInv>
+# <x y ringInnerRadius ringWidth ringDiscSleeveWidth numberOfRingSides gap waveGuideLength waveGuideWidth exposureSleeveWidth endcap ringInfiniteInv>
+#
+<InvPOSITIVEdiscInfiniteTest struct>
+<0 0 84 2.0 128 4.0 10000 0.4 2.5 0 discInfiniteInvPos>
+#
+<InvPOSITIVEringInfiniteTest struct>
+<0 0 84 0.5 4.0 128 0.8 10000 0.4 5.0 0 ringInfiniteInvPos>
+
+
+
+
+# SYMMETRIC RING (R2 = -Rdisc) DISC (R2 = -Rdisc)
+# waveguide bending upwards above the ring and disc
+#
+# 2 constructors:
+#
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight endcap discSymmetric>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight endcap ringSymmetric>
+#
+<discSymmetricTest struct>
+# gap = 0.2
+<0 0 10 128 0.2 20.0 128 0.4 40 10 1 discSymmetric>
+<0 -50 10 128 0.2 40.0 128 0.4 40 10 1 discSymmetric>
+<0 -100 10 128 0.2 60.0 128 0.4 40 10 1 discSymmetric>
+<0 -150 10 128 0.2 80.0 128 0.4 40 10 1 discSymmetric>
+# gap = 0.8
+<150 0 10 128 0.8 20.0 128 0.4 40 10 1 discSymmetric>
+<150 -50 10 128 0.8 40.0 128 0.4 40 10 1 discSymmetric>
+<150 -100 10 128 0.8 60.0 128 0.4 40 10 1 discSymmetric>
+<150 -150 10 128 0.8 80.0 128 0.4 40 10 1 discSymmetric>
+#
+#
+<ringSymmetricTest struct>
+# gap = 0.2
+<0 0 10 0.5 128 0.2 20.0 128 0.4 40 10 1 ringSymmetric>
+<0 -50 10 0.5 128 0.2 40.0 128 0.4 40 10 1 ringSymmetric>
+<0 -100 10 0.5 128 0.2 60.0 128 0.4 40 10 1 ringSymmetric>
+<0 -150 10 0.5 128 0.2 80.0 128 0.4 40 10 1 ringSymmetric>
+# gap = 0.8
+<150 0 10 0.5 128 0.8 20.0 128 0.4 40 10 1 ringSymmetric>
+<150 -50 10 0.5 128 0.8 40.0 128 0.4 40 10 1 ringSymmetric>
+<150 -100 10 0.5 128 0.8 60.0 128 0.4 40 10 1 ringSymmetric>
+<150 -150 10 0.5 128 0.8 80.0 128 0.4 40 10 1 ringSymmetric>
+
+
+
+
+# SYMMETRIC RING (R2 = -Rdisc) DISC (R2 = -Rdisc) INVERSE
+# INVERSE waveguide bending upwards above the ring and disc
+#
+# 2 constructors:
+#
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight endcap discSymmetricInv>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight endcap ringSymmetricInv>
+#
+<INVERSEdiscSymmetricTest struct>
+<0 0 10 128 0.2 55.0 128 0.4 0.5 40 10 0 discSymmetricInv>
+#
+<INVERSEringSymmetricTest struct>
+<0 0 10 0.6 128 0.2 55.0 128 0.4 0.5 40 10 0 ringSymmetricInv>
+
+
+
+
+# SYMMETRIC RING (R2 = -Rdisc) DISC (R2 = -Rdisc) INVERSE POSITIVE TONE RESIST
+# INVERSE POSITIVE TONE RESIST waveguide bending upwards above the ring and disc
+#
+# 2 constructors:
+#
+# <x y discRadius ringDiscSleeveWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight endcap discSymmetricInvPos>
+# <x y ringInnerRadius ringWidth ringDiscSleeveWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight endcap ringSymmetricInvPos>
+#
+<InvPOSITIVEdiscSymmetricTest struct>
+<0 0 84 8.0 128 0.2 55.0 128 0.4 20 500 100 0 discSymmetricInvPos>
+#
+<InvPOSITIVEringSymmetricTest struct>
+<0 0 84 0.5 8.0 128 0.2 55.0 128 0.4 20 500 100 0 ringSymmetricInvPos>
+
+
+
+
+# PULLEY RING (R2 > Rring) DISC (R2 > Rdisc)
+# waveguide bending around the ring and disc, similar to a pulley
+#
+# 2 constructors:			
+#
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight endcap discPulley>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight endcap ringPulley>
+#
+<discPulleyTest struct>
+# gap = 0.2
+<0 0 10 128 0.2 20.0 128 0.4 40 10 1 discPulley>
+<0 -50 10 128 0.2 40.0 128 0.4 40 10 1 discPulley>
+<0 -100 10 128 0.2 60.0 128 0.4 40 10 1 discPulley>
+<0 -150 10 128 0.2 80.0 128 0.4 40 10 1 discPulley>
+# gap = 0.8
+<150 0 10 128 0.8 20.0 128 0.4 40 10 1 discPulley>
+<150 -50 10 128 0.8 40.0 128 0.4 40 10 1 discPulley>
+<150 -100 10 128 0.8 60.0 128 0.4 40 10 1 discPulley>
+<150 -150 10 128 0.8 80.0 128 0.4 40 10 1 discPulley>
+#
+#
+<ringPulleyTest struct>
+# gap = 0.2
+<0 0 10 0.5 128 0.2 20.0 128 0.4 40 10 1 ringPulley>
+<0 -50 10 0.5 128 0.2 40.0 128 0.4 40 10 1 ringPulley>
+<0 -100 10 0.5 128 0.2 60.0 128 0.4 40 10 1 ringPulley>
+<0 -150 10 0.5 128 0.2 80.0 128 0.4 40 10 1 ringPulley>
+# gap = 0.8
+<150 0 10 0.5 128 0.8 20.0 128 0.4 40 10 1 ringPulley>
+<150 -50 10 0.5 128 0.8 40.0 128 0.4 40 10 1 ringPulley>
+<150 -100 10 0.5 128 0.8 60.0 128 0.4 40 10 1 ringPulley>
+<150 -150 10 0.5 128 0.8 80.0 128 0.4 40 10 1 ringPulley>
+
+
+
+
+# PULLEY RING (R2 > Rring) DISC (R2 > Rdisc) INVERSE
+# INVERSE waveguide bending around the ring and disc, similar to a pulley
+#
+# 2 constructors:			
+#
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight endcap discPulley>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight endcap ringPulley>
+#
+<INVERSEdiscPulleyTest struct>
+<0 0 10 128 0.8 55.0 128 0.4 0.5 40 10 0 discPulleyInv>
+#
+<INVERSEringPulleyTest struct>
+<0 0 10 0.6 128 0.8 55.0 128 0.4 0.5 40 10 0 ringPulleyInv>
+
+
+
+
+# PULLEY RING (R2 > Rring) DISC (R2 > Rdisc) INVERSE POSITIVE TONE RESIST
+# INVERSE POSITIVE TONE RESIST waveguide bending around the ring and disc, similar to a pulley
+#
+# 2 constructors:			
+#
+# <x y discRadius ringDiscSleeveWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight endcap discPulley>
+# <x y ringInnerRadius ringWidth ringDiscSleeveWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight endcap ringPulley>
+#
+<InvPOSITIVEdiscPulleyTest struct>
+<0 0 84 8.0 128 0.2 55.0 128 0.4 20.0 500 100 0 discPulleyInvPos>
+#
+<InvPOSITIVEringPulleyTest struct>
+<0 0 84 0.5 8.0 128 0.2 55.0 128 0.4 20 500 100 0 ringPulleyInvPos>
+
+
+
+
+

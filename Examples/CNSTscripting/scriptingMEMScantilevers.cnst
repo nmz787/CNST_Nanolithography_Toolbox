@@ -1,0 +1,235 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+4 layer
+
+# **** **** **** **** **** **** **** **** **** **** **** ****
+# MEMS CANTILEVERS OF VARYING LENGTH
+#
+# Linear length variation from startLength value in increments of deltaLength
+# x y cantileverWidth startLength pitch numberOfElements baseHeight baseExtent deltaLength THETArotationAboutXY cantileverL
+#
+<cantileverLinearVariation struct>
+0 0 0.5 2.0 1.0 44 14 4 0.4 0 cantileverL
+
+#
+# Percentage length variation from startLength value in increments of the percentValue
+# x y cantileverWidth startLength pitch numberOfElements baseHeight baseExtent percentValue THETArotationAboutXY cantileverP
+#
+<cantileverPercentageVariation struct>
+# 8 percent length variation between adjacent elements
+0 0 0.5 2.0 1.0 44 14 4 8 0 cantileverP
+
+#
+# Sinusoidal length variation from startLength value with an amplitude defined by the sineAmplitude parameter
+# x y cantileverWidth startLength pitch numberOfElements baseHeight baseExtent sineAmplitude THETArotationAboutXY cantileverSine
+#
+<cantileverSinusoidalVariation struct>
+# 8 percent length variation between adjacent elements
+0 0 0.5 10 1.0 88 14 4 4 0 cantileverSine
+
+#
+# Linear length variation from startLength value to an endLength value
+# x y cantileverWidth startLength endLength pitch numberOfElements baseHeight baseExtent THETArotationAboutXY cantileverLSE
+#
+<cantileverLinearSEVariation struct>
+# 88 elements varying form startLength = 2um to endLength = 22um
+0 0 0.5 2.0 22 1.0 88 14 4 0 cantileverLSE
+
+#
+# Non-Linear length variation from startLength value to an endLength value
+# x y cantileverWidth startLength endLength pitch numberOfElements baseHeight baseExtent THETArotationAboutXY cantileverNLSE
+#
+<cantileverNonLinearSEVariation struct>
+# 88 elements varying form startLength = 2um to endLength = 44um
+0 0 0.5 2.0 44 1.0 88 14 4 0 cantileverNLSE
+
+#
+# CUSTOM cantilever dimensions
+# x y space1 width1 length1 space3 width2 length2 ... spaceN widthN lengthN spaceEND baseHeight THETArotationAboutXY cantileverCustom
+#
+<cantileverCustomVariation struct>
+0 0
+0.5	0.2	1.0016
+0.55	0.3	1.0081
+0.6	0.4	1.0256
+0.65	0.5	1.0625
+0.7	0.6	1.1296
+0.75	0.7	1.2401
+0.8	0.8	1.4096
+0.85	0.9	1.6561
+0.9	1	2
+0.95	1.1	2.4641
+1	1.2	3.0736
+1.05	1.3	3.8561
+1.1	1.4	4.8416
+1.15	1.5	6.0625
+1.2	1.6	7.5536
+1.25	1.7	9.3521
+1.3	1.8	11.4976
+1.35	1.9	14.0321
+1.4	2	17
+2.2 10 0 cantileverCustom
+
+
+
+
+# **************** **************** **************** ****************
+# SINGLE CANTILEVERS WITH A BASE
+# **************** **************** **************** ****************
+#
+# Rectangular lever stemming from an anchored rectangular base
+# x y cantileverWidth cantileverLength baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverSR
+<cantSRectangle struct>
+7 layer
+0 0 0.5 11.11 4.4 2.2 0.4 11 0 cantileverSR
+
+#
+# Rectangular lever with a triangular tip stemming from an anchored rectangular base
+# x y cantileverWidth cantileverLength triangleHeight baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverSTri
+<cantSTriangle struct>
+0 0 0.5 11.11 0.44 4.4 2.2 0.4 11 0 cantileverSTri
+
+#
+# Trapezoidal lever stemming from an anchored rectangular base
+# x y cantileverWidthBottom cantileverWidthTop cantileverLength baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverSTrap
+<cantSTrapezoid struct>
+0 0 1 0.5 8 4.4 4.4 0.4 11 0 cantileverSTrap
+
+#
+# Rectangular lever with a rectangular paddle tip stemming from an anchored rectangular base
+# x y cantileverWidthBottom cantileverWidthTop cantileverLengthBottom cantileverLengthTop baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverSPaddle
+<cantSPaddle struct>
+0 0 1 2.2 8 4.4 4.4 2.2 0.4 11 0 cantileverSPaddle
+
+#
+# Curved Half lever stemming from an anchored rectangular base
+# x y cantileverWidth radius numberOfSides baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverSCH
+<cantSCurvedHalf struct>
+0 0 0.2 4 64 4.4 2.2 0.4 11 0 cantileverSCH
+
+#
+# Curved Half lever stemming from an anchored rectangular base
+# x y cantileverWidth radius numberOfSides strightSectionLength baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverSCF
+<cantSCurvedFullLength struct>
+0 0 0.2 4 64 2 4.4 2.2 0.4 11 0 cantileverSCF
+
+
+
+
+# **************** **************** **************** ****************
+# HOLLOW SINGLE CANTILEVERS WITH A BASE
+# **************** **************** **************** ****************
+#
+# Hollow Rectangular lever stemming from an anchored rectangular base
+# x y cantileverWidth cantileverLength hollowWidth baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverHR
+<cantHRectangle struct>
+7 layer
+0 0 2 11.11 0.5 4.4 2.2 0.4 11 0 cantileverHR
+
+#
+# Hollow Rectangular lever with a triangular tip stemming from an anchored rectangular base
+# x y cantileverWidth cantileverLength triangleHeight hollowWidth baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverHTri
+<cantHTriangle struct>
+0 0 2 11.11 2.44 0.5 4.4 2.2 0.4 11 0 cantileverHTri
+
+#
+# Hollow Trapezoidal lever stemming from an anchored rectangular base
+# x y cantileverWidthBottom cantileverWidthTop cantileverLength hollowWidth baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverHTrap
+<cantHTrapezoid struct>
+0 0 4 2 8 0.5 4.4 4.4 0.4 11 0 cantileverHTrap
+
+#
+# Hollow Rectangular lever with a rectangular paddle tip stemming from an anchored rectangular base
+# x y cantileverWidthBottom cantileverWidthTop cantileverLengthBottom cantileverLengthTop hollowWidth baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverHPaddle
+<cantHPaddle struct>
+0 0 2 5 8 4.4 0.5 4.4 2.2 0.4 11 0 cantileverHPaddle
+
+#
+# Hollow Curved Half lever stemming from an anchored rectangular base
+# x y cantileverWidth radius numberOfSides hollowWidth baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverHCH
+<cantHCurvedHalf struct>
+0 0 2 4 64 0.5 4.4 2.2 0.4 11 0 cantileverHCH
+
+#
+# Hollow Curved Half lever stemming from an anchored rectangular base
+# x y cantileverWidth radius numberOfSides strightSectionLength hollowWidth baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverHCF
+<cantHCurvedFullLength struct>
+0 0 2 4 64 2.5 0.5 4.4 2.2 0.4 11 0 cantileverHCF
+
+
+
+
+# **************** **************** **************** ****************
+# PARALLEL TWO AND THREE CANTILEVER CONFIGURATION
+# **************** **************** **************** ****************
+#
+# Two parallel cantilever
+# x y cantileverWidth cantileverLength1 cantileverLength2 cantileverLengthTop gap baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverPB2
+<cantPB2 struct>
+0 0 0.5 10 8 20 1 4.4 2.2 0.4 11 0 cantileverPB2
+
+#
+# Two parallel cantilever
+# x y cantileverWidth cantileverLength1 cantileverLength2 cantileverLength3 cantileverLengthTop gap baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverPB3
+<cantPB3 struct>
+0 0 0.5 10 14 8 20 4 4.4 2.2 0.4 11 0 cantileverPB3
+
+
+
+
+# **************** **************** **************** ****************
+# U-SHAPED SPRING DESIGNS
+# **************** **************** **************** ****************
+#
+# U-Shaped Rectangular
+# x y cantileverWidth cantileverLength1 cantileverLength2 cantileverLengthTop baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverUR
+<cantUShapedRectagular struct>
+7 layer
+0 0 0.5 10 14 8 4.4 2.2 0.4 11 0 cantileverUR
+
+#
+# U-Shaped Circularly Filleted
+# x y cantileverWidth cantileverLength1 cantileverLength2 cantileverLengthTop radius numberOfSides baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverUCF
+<cantUShapedCircleFillet struct>
+0 0 0.5 10 14 5 4 64 4.4 2.2 0.4 11 0 cantileverUCF
+
+#
+# U-Shaped Circularly Linked
+# x y cantileverWidth cantileverLength1 cantileverLength2 diameter numberOfSides baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverUC
+<cantUShapedCircular struct>
+0 0 0.5 10 14 10 64 4.4 2.2 0.4 11 0 cantileverUC
+
+#
+# U-Shaped with a CENTRAL CANTILEVER
+# x y cantileverWidth1 cantileverWidth2 cantileverLength1 cantileverLength2 cantileverLength3 cantileverLengthTop baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverUCC
+<cantUShapedCenterCantilever struct>
+0 0 0.5 5 10 14 10 22 4.4 2.2 0.4 11 0 cantileverUCC
+
+#
+# U-Shaped with a CENTRAL PADDLE
+# x y cantileverWidth1 cantileverWidth2 cantileverLength1 cantileverLength2a cantileverLength2b cantileverLength3 cantileverLengthTop baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverUCP
+<cantUShapedCenterPaddle struct>
+0 0 0.5 5 10 11 4 10 22 4.4 2.2 0.4 11 0 cantileverUCP
+
+
+
+
+# **************** **************** **************** ****************
+# CURVED CANTILEVER AND PADDLE - ELLIPSE DEFINED CURVATURE
+# **************** **************** **************** ****************
+#
+# Curved Cantilever
+# x y cantileverWidth cantileverLength radiusX radiusY numberOfSides baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverCE
+<cantCurvedEllipse struct>
+7 layer
+0 0 0.5 4.4 4 8 64 5.2 2.2 0.4 11 0 cantileverCE
+
+#
+# Curved Cantilever With Paddle
+# x y cantileverWidth cantileverLength radiusX1 radiusY1 radiusX2 radiusY2 numberOfSides paddleWidth paddleLength baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY cantileverCEPaddle
+<cantCurvedEllipsePaddle struct>
+7 layer
+0 0 0.5 2.8 6 8 4 4 64 4.4 10 5.2 8 0.4 11 0 cantileverCEPaddle
+

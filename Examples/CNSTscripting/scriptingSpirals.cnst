@@ -1,0 +1,29 @@
+0.001 gdsReso
+
+0.100 shapeReso
+
+<variousSpirals struct>
+
+# ******************************
+# SPIRALS
+# ******************************
+# 3 spiral constructors
+# 
+# Archimedes
+# x  y  Width  NumberOfTurns  Separation  Increment  spiralArch
+#
+# Fermat
+# x  y  Width  NumberOfTurns  a  Increment  spiralArch
+#
+# Logarithmic
+# x  y  Width  NumberOfTurns  a  b  Increment  spiralArch
+#
+
+4 layer
+40 80 1.0 4 2.0 0.01 spiralArch
+
+7 layer
+-20 40 2.5 7 8 0.010 spiralFermat
+
+11 layer
+50 -100 4.4 4 8.0 0.1 0.010 spiralLog

@@ -1,0 +1,26 @@
+0.001 gdsReso
+
+0.0100 shapeReso
+
+
+11 layer
+<gratingsTest struct>
+# ******************************
+# GRATINGS
+# ******************************
+# grating constructor
+#
+# <singleRectangleStructName x y width length pitch numberOfLines grating>
+#
+<200nmLine -10 20 0.2 50.00 0.5 100 grating>
+
+
+<gratingCouplerTest struct>
+# ******************************
+# GRATING COUPLER
+# ******************************
+# grating coupler constructor
+#
+# <x y radius width pitch angleStart angleStop numberOfSides numberOfRings gratingCoupler>
+#
+<0 0 4.0 0.5 1.0 316.0 44.0 88 40 gratingCoupler>

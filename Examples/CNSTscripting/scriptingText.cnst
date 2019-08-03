@@ -1,0 +1,23 @@
+0.001 gdsReso
+
+# ******************************
+# TEXT
+# ******************************
+# 2 outlined text constructors
+# 		- textgds	- (x,y) represents the lower left corner
+# 		- textgds	- (x,y) represents the center of the text object
+#		- fontOutline parameter sets the outline letter width in micrometers
+#
+# <{{someText}} {{full font name}} fontSize x y textgds>
+# <{{someText}} {{full font name}} fontSize x y textgdsC>
+#
+
+0.010 shapeReso
+
+<textTest struct>
+
+7 layer
+<{{CNST}} {{Arial}} 4 8 -4 textgds>
+
+2 layer
+<{{CNST}} {{Arial}} 8 0 4 textgdsC>

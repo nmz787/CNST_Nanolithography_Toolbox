@@ -1,0 +1,32 @@
+0.001 gdsReso
+
+0.0100 shapeReso
+
+# ******************************
+# TEXTOUTLINE
+# ******************************
+# 2 outlined text constructors
+# 		- textOutline	- (x,y) represents the lower left corner
+# 		- textOutlineC	- (x,y) represents the center of the text object
+#		- fontOutline parameter sets the outline letter width in micrometers
+#
+# <{{someText}} {{full font name}} fontSize x y textOutline>
+# <{{someText}} {{full font name}} fontSize x y textOutlineC>
+#
+
+# sets the font outline to 0.4micrometers
+0.4 fontOutline
+
+<textOutlineTest struct>
+11 layer
+<{{Nano}} {{Arial}} 10 20 20 textOutline>
+
+
+0.1 fontOutline
+
+7 layer
+<{{Nano}} {{Serif}} 10 0 0 textOutlineC>
+
+
+
+

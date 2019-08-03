@@ -1,0 +1,109 @@
+0.001 gdsReso
+0.001 shapeReso
+2 layer
+
+
+# INVERSE POSITIVE TONE RESIST SYMMETRIC RING DOUBLE STRAIGHT PULLEY (R2 = -Rdisc) DISC (R2 = -Rdisc)
+#
+# 4 constructors:
+# <x y discRadius ringDiscSleeveWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 width2 sleeve2 length2 endcap discSymInvPosDS>
+# <x y ringInnerRadius ringWidth ringDiscSleeveWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 width2 sleeve2 length2 endcap ringSymInvPosDS>
+# <x y discRadius ringDiscSleeveWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 angle2 width2 sleeve2 length2 height2 endcap discSymInvPosPul>
+# <x y ringInnerRadius ringWidth ringDiscSleeveWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 angle2 width2 sleeve2 length2 height2 endcap ringSymInvPosPul>
+#
+<InvPOSdiscSymDSTest struct>
+<100 200 84 8.0 128 0.2 45.0 128 0.4 20 500 100 0.44 0.25 22.4 800 1 discSymInvPosDS>
+#
+<InvPOSringSymDSTest struct>
+<100 -200 84 0.5 8.0 128 0.2 45.0 128 0.4 20 500 100 0.44 0.25 22.4 800 1 ringSymInvPosDS>
+#
+<InvPOSdiscSymPulTest struct>
+<100 -200 154 8.0 128 0.2 55.0 128 0.4 20 500 100 0.44 45.0 0.25 12.4 800 140 1 discSymInvPosPul>
+#
+<InvPOSringSymPulTest struct>
+<100 -200 154 0.5 8.0 128 0.2 55.0 128 0.4 20 500 100 0.44 45.0 0.25 12.4 800 140 1 ringSymInvPosPul>
+
+
+
+
+# INVERSE POSITIVE TONE RESIST SYMMETRIC RING DOUBLE STRAIGHT PULLEY (R2 = -Rdisc) DISC (R2 = -Rdisc) COUPLING LENGTH SPECIFIED
+#
+# 4 constructors:
+# <x y discRadius ringDiscSleeveWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 width2 sleeve2 length2 endcap discSymInvPosLCDS>
+# <x y ringInnerRadius ringWidth ringDiscSleeveWidth numberOfRingSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 width2 sleeve2 length2 endcap ringSymInvPosLCDS>
+# <x y discRadius ringDiscSleeveWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 couplingLength2 width2 sleeve2 length2 height2 endcap discSymInvPosLCPul>
+# <x y ringInnerRadius ringWidth ringDiscSleeveWidth numberOfRingSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 couplingLength2 width2 sleeve2 length2 height2 endcap ringSymInvPosLCPul>
+#
+<InvPOSdiscSymLCDSTest struct>
+<100 200 84 8.0 128 0.2 125.0 128 0.4 20 500 100 0.44 0.25 22.4 800 1 discSymInvPosLCDS>
+#
+<InvPOSringSymLCDSTest struct>
+<100 -200 84 0.5 8.0 128 0.2 125.0 128 0.4 20 500 100 0.44 0.25 22.4 800 1 ringSymInvPosLCDS>
+#
+<InvPOSdiscSymLCPulTest struct>
+<100 -200 154 8.0 128 0.2 125.0 128 0.4 20 500 100 0.44 125.0 0.25 12.4 800 140 1 discSymInvPosLCPul>
+#
+<InvPOSringSymLCPulTest struct>
+<100 -200 154 0.5 8.0 128 0.2 125.0 128 0.4 20 500 100 0.44 125.0 0.25 12.4 800 140 1 ringSymInvPosLCPul>
+
+
+
+
+#
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# INVERSE POSITIVE TONE RESIST PULLEY RING DOUBLE STRAIGHT PULLEY (R2 > Rring) DISC (R2 > Rdisc)
+#
+# 4 constructors:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 width2 sleeve2 length2 endcap discSymInvPosADS>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 width2 sleeve2 length2 endcap ringSymInvPosADS>
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 angle2 width2 sleeve2 length2 endcap discSymInvPosAPul>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 angle2 width2 sleeve2 length2 endcap ringSymInvPosAPul>
+#
+<InvPOSdiscSymInvPosADSTest struct>
+<100 200 84 8.0 128 0.2 25.0 128 0.4 20 500 0.25 0.1 22.4 400 1 discSymInvPosADS>
+#
+<InvPOSringSymInvPosADSTest struct>
+<100 -200 84 0.5 8.0 128 0.2 25.0 128 0.4 20 500 0.25 0.1 22.4 400 1 ringSymInvPosADS>
+#
+<InvPOSdiscSymInvPosAPulTest struct>
+<100 200 84 8.0 128 0.2 25.0 128 0.4 20 500 0.25 45.0 0.1 22.4 400 1 discSymInvPosAPul>
+#
+<InvPOSringSymInvPosAPulTest struct>
+<100 -200 84 0.5 8.0 128 0.2 25.0 128 0.4 20 500 0.25 45.0 0.1 22.4 400 1 ringSymInvPosAPul>
+
+
+
+
+#
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# INVERSE POSITIVE TONE RESIST PULLEY RING DOUBLE STRAIGHT PULLEY (R2 > Rring) DISC (R2 > Rdisc) COUPLING LENGTH SPECIFIED
+#
+# 4 constructors:
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 width2 sleeve2 length2 endcap discSymInvPosLCADS>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 width2 sleeve2 length2 endcap ringSymInvPosLCADS>
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 couplingLength2 width2 sleeve2 length2 endcap discSymInvPosLCAPul>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 couplingLength2 width2 sleeve2 length2 endcap ringSymInvPosLCAPul>
+#
+<00InvPOSdiscSymInvPosLCADSTest struct>
+<100 200 84 8.0 128 0.2 125.0 128 0.4 20 500 0.25 0.1 22.4 400 1 discSymInvPosLCADS>
+#
+<00InvPOSringSymInvPosLCADSTest struct>
+<100 -200 84 0.5 8.0 128 0.2 125.0 128 0.4 20 500 0.25 0.1 22.4 400 1 ringSymInvPosLCADS>
+#
+<00InvPOSdiscSymInvPosLCAPulTest struct>
+<100 200 84 8.0 128 0.2 125.0 128 0.4 20 500 0.25 145.0 0.1 22.4 400 1 discSymInvPosLCAPul>
+#
+<00InvPOSringSymInvPosLCAPulTest struct>
+<100 -200 84 0.5 8.0 128 0.2 125.0 128 0.4 20 500 0.25 145.0 0.1 22.4 400 1 ringSymInvPosLCAPul>
+
+
+
+
+
+
+
+
+
+

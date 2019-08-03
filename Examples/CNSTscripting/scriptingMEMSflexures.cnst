@@ -1,0 +1,78 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+4 layer
+
+# **************** **************** **************** ****************
+# Hinged Flexures
+# **************** **************** **************** ****************
+#
+# 2 Anchored Hinges with a proof mass V2A
+# x y width1 width2 length1 length2 proofMassWidth proofMassLength baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY flexure2A
+<flexure2Aexample struct>
+0 0 0.5 8 1 22 16 5.2 4 0.4 7 0 flexure2A
+
+#
+# 2 Anchored Hinges with a proof mass V2B
+# x y width length1 length2 proofMassWidth proofMassLength connectorHeight connectorWidth padHeight padWidth baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY flexure2B
+<flexure2Bexample struct>
+0 0 0.25 10 28 22 16 5 1.1 5 4.4 10 8 0.4 7 0 flexure2B
+
+#
+# 2 Anchored Hinges with a MEANDER supporting a proof mass V2C
+# x y width length1 length2 length3 proofMassWidth proofMassLength amplitude Period baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY flexure2C
+<flexure2Cexample struct>
+0 0 0.5 5 30 2 30 20 8 10 5.2 4 0.4 7 0 flexure2C
+
+#
+# 2 Anchored Hinges with a MEANDER supporting a proof mass V2D
+# x y width1 width2 width3 width4 length1 length2 length3 length4 length5 length6 baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY flexure2D
+<flexure2Dexample struct>
+0 0 3.4 1.1 0.5 0.4 20 5 8 2.8 1.4 0.44 8.8 0.4 7 0 flexure2D
+
+#
+# 2 Anchored Hinges with a MEANDER supporting a proof mass V2E
+# x y width1 width2 width3 width4 width5 length1 length2 length3 length4 gap baseExtent baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY flexure2E
+<flexure2Eexample struct>
+0 0 8.2 0.2 0.88 0.22 2.44 20 8 1.44 2.42 3.4 0.2 8.44 4.4 0.4 7 0 flexure2E
+
+
+#
+# 4 Anchored Hinges with a proof mass V4A
+# x y width length1 length2 proofMassWidth proofMassLength baseHeight baseExtent anchorOverlapWidth anchorGDSLayer THETArotationAboutXY flexure4A
+<flexure4Aexample struct>
+11 layer
+0 0 0.5 22 14 8 16 5.2 2.2 0.4 7 0 flexure4A
+
+#
+# 4 Anchored Hinges with a proof mass V4B
+# x y width length1 length2 proofMassWidth gap baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY flexure4B
+<flexure4Bexample struct>
+0 0 0.5 5 2 25 2.2 5 4 0.4 7 0 flexure4B
+
+#
+# 4 Anchored Hinges with a proof mass V4C
+# x y width length1 length2 length3 length4 proofMassWidth gap baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY flexure4C
+<flexure4Cexample struct>
+0 0 0.5 2 5 2 8 25 2.2 5 4 0.4 7 0 flexure4C
+
+#
+# 4 Anchored Hinges with a proof mass V4D
+# x y width1 width2 length1 length2 proofMassWidth proofMassLength gap baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY flexure4D
+<flexure4Dexample struct>
+0 0 0.5 1 0.2 8 4 50 20 2.2 5 4 0.4 7 0 flexure4D
+#
+# 4 Anchored Hinges with a proof mass V4E
+# x y width1 width2 width3 width4 length1 length2 length3 length4 length5 baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY flexure4E
+<flexure4Eexample struct>
+0 0 8.2 0.2 0.88 1.7 20 11 1.44 5 3.4 8.44 4.4 0.4 7 0 flexure4E
+
+
+
+
+
+
+
+
+

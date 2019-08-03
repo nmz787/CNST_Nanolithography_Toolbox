@@ -1,0 +1,199 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+11 layer
+
+# **************** **************** **************** ****************
+# INTERDIGITATED ELECTRODES
+# **************** **************** **************** ****************
+#
+# Interdigitated Electrodes V1
+# x y width length1 length2 length3 numberOfElectrodeFingers pitch baseHeight baseWidth THETArotationAboutXY intElec1
+<intElec1Example struct>
+0 0 0.4 1.1 10.1 3.4 2.2 44 1.4 4 5 0 intElec1
+
+#
+# Interdigitated Electrodes V2
+# x y width length1 length2 length3 numberOfElectrodeFingers pitch baseHeight baseWidth THETArotationAboutXY intElec2
+<intElec2Example struct>
+0 0 0.4 1.1 10.1 3.4 8.8 44 1.4 4 5 0 intElec2
+
+#
+# Interdigitated Electrodes V3
+# x y width length1 length2 length3 numberOfElectrodeFingers pitch baseHeight baseWidth THETArotationAboutXY intElec3
+<intElec3Example struct>
+0 0 0.4 1.1 10.1 3.4 8.8 44 1.4 4 5 0 intElec3
+
+#
+# Interdigitated Electrodes V4
+# x y width length1 length2 length3 numberOfElectrodeFingers pitch baseHeight baseWidth THETArotationAboutXY intElec4
+<intElec4Example struct>
+0 0 0.4 1.1 10.1 3.4 8.8 44 1.4 4 5 0 intElec4
+
+#
+# Interdigitated Electrodes V5
+# x y width length1 length2 length3 numberOfElectrodeFingers pitch baseHeight baseWidth THETArotationAboutXY intElec5
+<intElec5Example struct>
+0 0 0.4 1.1 10.1 3.4 9.1 44 1.4 4 5 0 intElec5
+
+
+
+
+# **************** **************** **************** ****************
+# RECTANGULAR SPIRAL
+# **************** **************** **************** ****************
+#
+# Rectangular Spiral
+# x y width startLength pitch numberOfTurns THETArotationAboutXY spiralRect
+<spiralRectExample struct>
+0 0 0.2 2 1 4 0 spiralRect
+
+
+
+
+# **************** **************** **************** ****************
+# RESOLUTION TEST PATTERNS
+# **************** **************** **************** ****************
+#
+# Resolution Pattern - user defined width
+# x y radius width THETArotationAboutXY resoPattern
+<resoTestPat struct>
+0 0 50 1 0 resoPattern
+
+#
+# Resolution Pattern - outer width defined in n integers of PI
+# x y radius n THETArotationAboutXY resoPatternPi
+<resoTestPatPi struct>
+0 0 100 2 0 resoPatternPi
+
+#
+# Resolution pattern - two rows of rectangular shapes
+# x y width height numberOfLines THETArotationAboutXY resoPatternRS
+<resoTestPatRS struct>
+0 0 0.5 10 20 0 resoPatternRS
+
+#
+# Resolution pattern - arrayed version of two rows of rectangular shapes
+# x y widthStart widthEnd deltaWidth height numberOfLines space THETArotationAboutXY resoPatternRSA
+<resoTestPatRSA struct>
+0 0 0.4 1.6 0.2 10 20 10 0 resoPatternRSA
+
+#
+# Resolution pattern - two rows of L-shapes
+# x y width height numberOfLines THETArotationAboutXY resoPatternLS
+<resoTestPatLS struct>
+0 0 0.5 10 20 0 resoPatternLS
+
+#
+# Resolution pattern - arrayed version of two rows of L-shapes
+# x y widthStart widthEnd deltaWidth height numberOfLines space THETArotationAboutXY resoPatternLSA
+<resoTestPatLSA struct>
+0 0 0.4 1.6 0.2 10 20 10 0 resoPatternLSA
+
+
+
+
+# **************** **************** **************** ****************
+# FLUIDIC JUNCTIONS
+# **************** **************** **************** ****************
+#
+# T Junction
+# x y width1 width2 length1 length2 radius numberOfCircleSides THETArotationAboutXY tJunction
+<tJunctionExample struct>
+0 0 1 2 10 20 2 64 0 tJunction
+# T Junction without circular electrodes - radius = 0
+<tJunctionExample2 struct>
+0 0 1 2 10 20 0 64 0 tJunction
+
+#
+# H Junction
+# x y width1 width2 length1 length2 radius numberOfCircleSides THETArotationAboutXY hJunction
+<hJunctionExample struct>
+0 0 1 2 10 20 2 64 0 hJunction
+# T Junction without circular electrodes
+<hJunctionExample2 struct>
+0 0 1 2 10 20 0 64 0 hJunction
+
+#
+# Arrow Junction
+# x y width1 width2 length1 length2 radius numberOfCircleSides THETArotationAboutXY arrowJunction
+<arrowJunctionExample struct>
+0 0 1.7 2 20 40 4 64 35 0 arrowJunction
+# Arrow Junction without circular electrodes
+<arrowJunctionExample2 struct>
+0 0 1.7 2 20 40 0 64 35 0 arrowJunction
+
+
+
+
+# **************** **************** **************** ****************
+# RECTANGLE WITH A TAPER
+# **************** **************** **************** ****************
+#
+# Rectangle (width1, length2) connected to a taper of length2 and end width width2
+# x y width1 length1 length2 width2 THETArotationAboutXY tJunction
+<rectangleTaperExample struct>
+0 0 0.5 14 2 4 0 rectTaper
+
+
+
+
+# **************** **************** **************** ****************
+# RANDOM POLYGONS
+# **************** **************** **************** ****************
+#
+# Random Polygons
+# <uniqueStructNameForShape x y width height radius numberOfSides, separation, numberOfElements iterations RANDOMROTATION randomPolygons>
+
+<randomPolygonTest struct>
+<randSingleElement 0 0 80 40 1.0 3 3.0 400 500 1 randomPolygons>
+
+
+
+
+# **************** **************** **************** ****************
+# ARC-TORUS-CIRCLE BOUNDED SQUARE-HEX ARRAYS
+# **************** **************** **************** ****************
+#
+#	4 constructors
+# <uniqueStructureName x y innerArcRadius outerArcRadius startAngle endAngle numberOfArcSides rotationOfTheArcAboutXY radiusOfFillDot numberOfFillDotSides pitch arcSquareFill>
+#
+<arcSquare struct>
+4 layer
+<arcSmallCircleSqr 40 80 20 50 40 300 200 0 0.5 44 2 arcSquareFill>
+#
+# circle with innerArcRadius = 0, startAngle = 0, endAngle = 360
+<arcSmallCircleSqr 140 80 0 50 0 360 200 0 0.5 44 2 arcSquareFill>
+
+
+
+# <uniqueStructureName x y innerArcRadius outerArcRadius startAngle endAngle numberOfArcSides rotationOfTheArcAboutXY radiusOfFillDot pitch arcSquareFillV>
+
+<arcSquareVector struct>
+4 layer
+<arcSmallCircleSqrVector 40 80 20 50 40 300 200 0 0.5 2 arcSquareFillV>
+#
+# circle with innerArcRadius = 0, startAngle = 0, endAngle = 360
+<arcSmallCircleSqrVector 140 80 0 50 0 360 200 0 0.5 2 arcSquareFillV>
+
+
+# <uniqueStructureName x y innerArcRadius outerArcRadius startAngle endAngle numberOfArcSides rotationOfTheArcAboutXY radiusOfFillDot numberOfFillDotSides pitch arcHexFill>
+
+<arcHex struct>
+4 layer
+<arcSmallCircleHex 40 80 20 50 40 300 200 0 0.8 44 2 arcHexFill>
+#
+# circle with innerArcRadius = 0, startAngle = 0, endAngle = 360
+<arcSmallCircleHex 140 80 0 50 0 360 200 0 0.8 44 2 arcHexFill>
+
+
+# <uniqueStructureName x y innerArcRadius outerArcRadius startAngle endAngle numberOfArcSides rotationOfTheArcAboutXY radiusOfFillDot pitch arcHexFillV>
+
+<arcHexVector struct>
+4 layer
+<arcSmallCircleHexVector 40 80 20 50 40 300 200 0 0.8 2 arcHexFillV>
+#
+# circle with innerArcRadius = 0, startAngle = 0, endAngle = 360
+<arcSmallCircleHexVector 140 80 0 50 0 360 200 0 0.8 2 arcHexFillV>
+

@@ -1,0 +1,23 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# create a GDS structure/cell to store shapes
+<simpleRectangles struct>
+
+# set GDS layer
+4 layer
+
+# create a rectangle
+-5 20 0 28 0 rectangle
+
+
+# create another structure
+<circlesAndEllipses struct>
+
+# create an ellipse
+0 0 40 100 88 22.0 ellipse
+
+# create ellipse in GDS layer 40 with a datatype 44
+40 layer
+44 dataType
+100 80 40 40 44 0 ellipse

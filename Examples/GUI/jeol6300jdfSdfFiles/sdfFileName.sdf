@@ -1,0 +1,12 @@
+MAGAZIN 'CNST'
+
+#3
+%4A
+JDF     'jdfFileName',1
+EOS 3,'500pA_Ap25'
+LBC ON
+RESIST 1000,1000
+SHOT A,4
+OFFSET (0,0)
+
+END 3

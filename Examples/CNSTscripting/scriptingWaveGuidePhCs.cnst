@@ -1,0 +1,417 @@
+0.001 gdsReso
+
+0.100 shapeReso
+
+4 layer
+
+<waveGuideInvPhCTest struct>
+# ******** WAVEGUIDE PhC INVERSE PERIODIC
+# waveguide perforated with elliptical structures on a periodic grid
+#
+# rx1 ry1 N1 rx2 ry2 N2 .... rxn ryn Nn x y period waveGuideWidth waveGuideInvPhC
+#
+0.1	0.4	40
+0.12	0.4	42
+0.14	0.4	44
+0.16	0.4	46
+0.18	0.4	48
+0.2	0.4	50
+0.22	0.4	52
+0.24	0.4	54
+0.26	0.4	56
+0.28	0.4	58
+0.3	0.4	60
+0.32	0.4	62
+0.34	0.4	64
+0.36	0.4	66
+0.38	0.4	68
+0.4	0.4	70
+0.4	0.38	68
+0.4	0.36	66
+0.4	0.34	64
+0.4	0.32	62
+0.4	0.3	60
+0.4	0.28	58
+0.4	0.26	56
+0.4	0.24	54
+0.4	0.22	52
+0.4	0.2	50
+0.4	0.18	48
+0.4	0.16	46
+0.4	0.14	44
+0.4	0.12	42
+0.4	0.1	40
+-5 4 1.8 2.2 waveGuideInvPhC
+
+
+<waveGuideInvPhCvaryTest struct>
+# ******** WAVEGUIDE PhC INVERSE VARYING PITCH
+# waveguide perforated with elliptical structures with varying pitch
+#
+# rx1 ry1 a1 N1 rx2 ry2 a2 N2 .... rxn ryn an Nn x y waveGuideWidth waveGuideInvPhCvary
+#
+0.1	0.4	1.8	40
+0.12	0.4	1.9	42
+0.14	0.4	2	44
+0.16	0.4	2.1	46
+0.18	0.4	2.2	48
+0.2	0.4	2.3	50
+0.22	0.4	2.4	52
+0.24	0.4	2.5	54
+0.26	0.4	2.6	56
+0.28	0.4	2.7	58
+0.3	0.4	2.8	60
+0.32	0.4	2.9	62
+0.34	0.4	3	64
+0.36	0.4	3.1	66
+0.38	0.4	3.2	68
+0.4	0.4	3.3	70
+0.4	0.38	3.2	68
+0.4	0.36	3.1	66
+0.4	0.34	3	64
+0.4	0.32	2.9	62
+0.4	0.3	2.8	60
+0.4	0.28	2.7	58
+0.4	0.26	2.6	56
+0.4	0.24	2.5	54
+0.4	0.22	2.4	52
+0.4	0.2	2.3	50
+0.4	0.18	2.2	48
+0.4	0.16	2.1	46
+0.4	0.14	2	44
+0.4	0.12	1.9	42
+0.4	0.1	1.8	40
+0 0 2.2 waveGuideInvPhCvary
+
+
+<waveGuidePhCTest struct>
+# ******** WAVEGUIDE PhC PERIODIC WITH RECTANGLE ABOVE AND BELOW
+# elliptical structures on a periodic grid with rectangle on top and bottom
+#
+# rx1 ry1 N1 rx2 ry2 N2 .... rxn ryn Nn x y pitch waveGuideWidth squareOverhangX squareHeight waveGuidePhC
+#
+0.1	0.4	40
+0.12	0.4	42
+0.14	0.4	44
+0.16	0.4	46
+0.18	0.4	48
+0.2	0.4	50
+0.22	0.4	52
+0.24	0.4	54
+0.26	0.4	56
+0.28	0.4	58
+0.3	0.4	60
+0.32	0.4	62
+0.34	0.4	64
+0.36	0.4	66
+0.38	0.4	68
+0.4	0.4	70
+0.4	0.38	68
+0.4	0.36	66
+0.4	0.34	64
+0.4	0.32	62
+0.4	0.3	60
+0.4	0.28	58
+0.4	0.26	56
+0.4	0.24	54
+0.4	0.22	52
+0.4	0.2	50
+0.4	0.18	48
+0.4	0.16	46
+0.4	0.14	44
+0.4	0.12	42
+0.4	0.1	40
+5 4 1.8 2.2 1.1 5.0 waveGuidePhC
+
+
+<waveGuidePhCvaryTest struct>
+# ******** WAVEGUIDE PhC VARYING SPACING WITH RECTANGLE ABOVE AND BELOW
+# elliptical structures varying spacing with rectangle on top and bottom
+#
+# rx1 ry1 a1 N1 rx2 ry2 a2 N2 .... rxn ryn an Nn x y waveGuideWidth squareOverhangX squareHeight waveGuidePhCvary
+#
+0.1	0.4	1.8	40
+0.12	0.4	1.9	42
+0.14	0.4	2	44
+0.16	0.4	2.1	46
+0.18	0.4	2.2	48
+0.2	0.4	2.3	50
+0.22	0.4	2.4	52
+0.24	0.4	2.5	54
+0.26	0.4	2.6	56
+0.28	0.4	2.7	58
+0.3	0.4	2.8	60
+0.32	0.4	2.9	62
+0.34	0.4	3	64
+0.36	0.4	3.1	66
+0.38	0.4	3.2	68
+0.4	0.4	3.3	70
+0.4	0.38	3.2	68
+0.4	0.36	3.1	66
+0.4	0.34	3	64
+0.4	0.32	2.9	62
+0.4	0.3	2.8	60
+0.4	0.28	2.7	58
+0.4	0.26	2.6	56
+0.4	0.24	2.5	54
+0.4	0.22	2.4	52
+0.4	0.2	2.3	50
+0.4	0.18	2.2	48
+0.4	0.16	2.1	46
+0.4	0.14	2	44
+0.4	0.12	1.9	42
+0.4	0.1	1.8	40
+5 -4 2.2 1.1 5.0 waveGuidePhCvary
+
+
+
+
+# **************** RECTANGULAR HOLES CENTERED ****************
+#
+<waveGuideInvRectPhCTest struct>
+# ******** WAVEGUIDE PhC INVERSE RECTANGULAR CENTERED PERIODIC
+# waveguide perforated with rectangular structures on a periodic grid
+#
+# Lx1 Ly1 Lx2 Ly2 .... Lxn Lyn x y pitch waveGuideWidth waveGuideInvRectPhC
+#
+0.1	0.4
+0.12	0.4
+0.14	0.4
+0.16	0.4
+0.18	0.4
+0.2	0.4
+0.22	0.4
+0.24	0.4
+0.26	0.4
+0.28	0.4
+0.3	0.4
+0.32	0.4
+0.34	0.4
+0.36	0.4
+0.38	0.4
+0.4	0.4
+0.4	0.38
+0.4	0.36
+0.4	0.34
+0.4	0.32
+0.4	0.3
+0.4	0.28
+0.4	0.26
+0.4	0.24
+0.4	0.22
+0.4	0.2
+0.4	0.18
+0.4	0.16
+0.4	0.14
+0.4	0.12
+0.4	0.1
+-5 -4 1.8 2.2 waveGuideInvRectPhC
+
+
+<waveGuideInvRectPhCvaryTest struct>
+# ******** WAVEGUIDE PhC INVERSE RECTANGULAR CENTERED VARYING PITCH
+# waveguide perforated with rectangular structures with varying pitch
+#
+# Lx1 Ly1 a1 Lx2 Ly2 a2 .... Lxn Lyn an x y waveGuideWidth waveGuideInvRectPhCvary
+#
+0.1	0.4	1.8
+0.12	0.4	1.9
+0.14	0.4	2
+0.16	0.4	2.1
+0.18	0.4	2.2
+0.2	0.4	2.3
+0.22	0.4	2.4
+0.24	0.4	2.5
+0.26	0.4	2.6
+0.28	0.4	2.7
+0.3	0.4	2.8
+0.32	0.4	2.9
+0.34	0.4	3
+0.36	0.4	3.1
+0.38	0.4	3.2
+0.4	0.4	3.3
+0.4	0.38	3.2
+0.4	0.36	3.1
+0.4	0.34	3
+0.4	0.32	2.9
+0.4	0.3	2.8
+0.4	0.28	2.7
+0.4	0.26	2.6
+0.4	0.24	2.5
+0.4	0.22	2.4
+0.4	0.2	2.3
+0.4	0.18	2.2
+0.4	0.16	2.1
+0.4	0.14	2
+0.4	0.12	1.9
+0.4	0.1	1.8
+4 7 4.4 waveGuideInvRectPhCvary
+
+
+<waveGuideRectPhCTest struct>
+# ******** WAVEGUIDE PhC NON-INVERTED RECTANGULAR CENTERED PERIODIC
+# rectangular structures on a periodic grid
+#
+# Lx1 Ly1 Lx2 Ly2 .... Lxn Lyn x y pitch waveGuideWidth squareOverhangX squareHeight waveGuideRectPhC
+#
+# ********************************
+#
+0.1	0.4
+0.12	0.4
+0.14	0.4
+0.16	0.4
+0.18	0.4
+0.2	0.4
+0.22	0.4
+0.24	0.4
+0.26	0.4
+0.28	0.4
+0.3	0.4
+0.32	0.4
+0.34	0.4
+0.36	0.4
+0.38	0.4
+0.4	0.4
+0.4	0.38
+0.4	0.36
+0.4	0.34
+0.4	0.32
+0.4	0.3
+0.4	0.28
+0.4	0.26
+0.4	0.24
+0.4	0.22
+0.4	0.2
+0.4	0.18
+0.4	0.16
+0.4	0.14
+0.4	0.12
+0.4	0.1
+0 0 1.8 2.2 1.1 4.0 waveGuideRectPhC
+
+
+<waveGuideRectPhCvaryTest struct>
+# ******** WAVEGUIDE PhC NON-INVERTED RECTANGULAR CENTERED VARYING PITCH
+# rectangular structures with varying pitch
+#
+# Lx1 Ly1 a1 Lx2 Ly2 a2 .... Lxn Lyn an x y waveGuideWidth squareOverhangX squareHeight waveGuideRectPhCvary
+#
+# ********************************
+#
+0.1	0.4	1.8
+0.12	0.4	1.9
+0.14	0.4	2
+0.16	0.4	2.1
+0.18	0.4	2.2
+0.2	0.4	2.3
+0.22	0.4	2.4
+0.24	0.4	2.5
+0.26	0.4	2.6
+0.28	0.4	2.7
+0.3	0.4	2.8
+0.32	0.4	2.9
+0.34	0.4	3
+0.36	0.4	3.1
+0.38	0.4	3.2
+0.4	0.4	3.3
+0.4	0.38	3.2
+0.4	0.36	3.1
+0.4	0.34	3
+0.4	0.32	2.9
+0.4	0.3	2.8
+0.4	0.28	2.7
+0.4	0.26	2.6
+0.4	0.24	2.5
+0.4	0.22	2.4
+0.4	0.2	2.3
+0.4	0.18	2.2
+0.4	0.16	2.1
+0.4	0.14	2
+0.4	0.12	1.9
+0.4	0.1	1.8
+-4 7 2.2 1.1 4.0 waveGuideRectPhCvary
+
+
+<waveGuideRectFlushTest struct>
+# ******** WAVEGUIDE PhC NON-INVERTED RECTANGULAR FLUSH WITH WAVEGUIDE TOP
+# rectangular structures flush wiht top of waveguide with varying spacing
+#
+# Lx1 Ly1 a1 Lx2 Ly2 a2 .... Lxn Lyn an x y waveGuideWidth distanceFromTopOfWaveGuide squareOverhangX squareHeight waveGuideRectFlushPhCvary
+#
+# ********************************
+#
+0.1	0.4	1.8
+0.12	0.4	1.9
+0.14	0.4	2
+0.16	0.4	2.1
+0.18	0.4	2.2
+0.2	0.4	2.3
+0.22	0.4	2.4
+0.24	0.4	2.5
+0.26	0.4	2.6
+0.28	0.4	2.7
+0.3	0.4	2.8
+0.32	0.4	2.9
+0.34	0.4	3
+0.36	0.4	3.1
+0.38	0.4	3.2
+0.4	0.4	3.3
+0.4	0.38	3.2
+0.4	0.36	3.1
+0.4	0.34	3
+0.4	0.32	2.9
+0.4	0.3	2.8
+0.4	0.28	2.7
+0.4	0.26	2.6
+0.4	0.24	2.5
+0.4	0.22	2.4
+0.4	0.2	2.3
+0.4	0.18	2.2
+0.4	0.16	2.1
+0.4	0.14	2
+0.4	0.12	1.9
+0.4	0.1	1.8
+0 0 2.2 0.1 1.1 4.0 waveGuideRectFlushPhCvary
+
+
+<waveGuideInvRectFlushTest struct>
+# ******** WAVEGUIDE PhC INVERTED RECTANGULAR FLUSH VARYING PITCH
+# rectangular structures flush at a distance from top of waveguide with varying pitch
+#
+# Lx1 Ly1 a1 Lx2 Ly2 a2 .... Lxn Lyn an x y waveGuideWidth distanceFromTopOfWaveGuide waveGuideInvRectFlushPhCvary
+#
+# ********************************
+#
+0.1	0.4	1.8
+0.12	0.4	1.9
+0.14	0.4	2
+0.16	0.4	2.1
+0.18	0.4	2.2
+0.2	0.4	2.3
+0.22	0.4	2.4
+0.24	0.4	2.5
+0.26	0.4	2.6
+0.28	0.4	2.7
+0.3	0.4	2.8
+0.32	0.4	2.9
+0.34	0.4	3
+0.36	0.4	3.1
+0.38	0.4	3.2
+0.4	0.4	3.3
+0.4	0.38	3.2
+0.4	0.36	3.1
+0.4	0.34	3
+0.4	0.32	2.9
+0.4	0.3	2.8
+0.4	0.28	2.7
+0.4	0.26	2.6
+0.4	0.24	2.5
+0.4	0.22	2.4
+0.4	0.2	2.3
+0.4	0.18	2.2
+0.4	0.16	2.1
+0.4	0.14	2
+0.4	0.12	1.9
+0.4	0.1	1.8
+0 0 2.2 0.1 waveGuideInvRectFlushPhCvary
+

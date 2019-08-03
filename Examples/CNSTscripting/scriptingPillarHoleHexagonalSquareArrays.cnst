@@ -1,0 +1,87 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# SQUARE ARRAYS OF PILLARS AND HOLES
+
+11 layer
+
+<00squarePillarArrays struct>
+# Square pillar array:
+# <uniqueStructName x y radiusX radiusY numberOfSides pitchX pitchY numberOfElementsX numberOfElementsY THETA sqrPillar>
+# Square pillar array centered around (x,y):
+# <uniqueStructName x y radiusX radiusY numberOfSides pitchX pitchY numberOfElementsX numberOfElementsY THETA sqrPillarC>
+#
+<sqrP 0 0 0.2 0.2 44 1 2 20 15 0 sqrPillar>
+<sqrPC 40 0 0.2 0.2 44 1 2 20 15 0 sqrPillarC>
+
+# VECTORIZED VERSIONS (numberOfSides parameter is omitted)
+# Vectorized Square pillar array:
+# <uniqueStructName x y radiusX radiusY pitchX pitchY numberOfElementsX numberOfElementsY THETA sqrPillarV>
+# Vectorized Square pillar array centered around (x,y):
+# <uniqueStructName x y radiusX radiusY pitchX pitchY numberOfElementsX numberOfElementsY THETA sqrPillarVC>
+#
+<sqrPV 60 0 0.2 0.2 1 2 20 15 0 sqrPillarV>
+<sqrPVC 100 0 0.2 0.2 1 2 20 15 0 sqrPillarVC>
+
+
+<00squareHoleArrays struct>
+
+# Square hole array:
+# <uniqueStructName x y radiusX radiusY numberOfSides pitchX pitchY numberOfElementsX numberOfElementsY THETA sqrHole>
+# Square hole array centered around (x,y):
+# <uniqueStructName x y radiusX radiusY numberOfSides pitchX pitchY numberOfElementsX numberOfElementsY THETA sqrHoleC>
+#
+<sqrH 0 0 0.2 0.2 44 1 2 20 15 0 sqrHole>
+<sqrHC 40 0 0.2 0.2 44 1 2 20 15 0 sqrHoleC>
+
+# VECTORIZED VERSIONS (numberOfSides parameter is omitted)
+# Vectorized Square hole array:
+# <uniqueStructName x y radiusX radiusY pitchX pitchY numberOfElementsX numberOfElementsY THETA sqrHoleV>
+# Vectorized Square hole array centered around (x,y):
+# <uniqueStructName x y radiusX radiusY pitchX pitchY numberOfElementsX numberOfElementsY THETA sqrHoleVC>
+#
+<sqrHV 60 0 0.2 0.2 1 2 20 15 0 sqrHoleV>
+<sqrHVC 100 0 0.2 0.2 1 2 20 15 0 sqrHoleVC>
+
+
+
+
+# HEXAGONAL ARRAYS OF PILLARS AND HOLES (pitchY is omitted since it's determined by the pitchX parameter)
+
+<00hexPillarArrays struct>
+# Hexagonal pillar array:
+# <uniqueStructName x y radiusX radiusY numberOfSides pitchX numberOfElementsX numberOfElementsY THETA hexPillar>
+# Hexagonal pillar array centered around (x,y):
+# <uniqueStructName x y radiusX radiusY numberOfSides pitchX numberOfElementsX numberOfElementsY THETA hexPillarC>
+#
+<hexP 0 0 0.2 0.2 44 1 20 15 0 hexPillar>
+<hexPC 40 0 0.2 0.2 44 1 20 15 0 hexPillarC>
+
+# VECTORIZED VERSIONS (numberOfSides parameter is omitted)
+# Vectorized Hexagonal pillar array:
+# <uniqueStructName x y radiusX radiusY pitchX numberOfElementsX numberOfElementsY THETA hexPillarV>
+# Vectorized Hexagonal pillar array centered around (x,y):
+# <uniqueStructName x y radiusX radiusY pitchX numberOfElementsX numberOfElementsY THETA hexPillarVC>
+#
+<hexPV 60 0 0.2 0.2 1 20 15 0 hexPillarV>
+<hexPVC 100 0 0.2 0.2 1 20 15 0 hexPillarVC>
+
+
+<00hexHoleArrays struct>
+
+# Hexagonal hole array:
+# <uniqueStructName x y radiusX radiusY numberOfSides pitchX numberOfElementsX numberOfElementsY THETA hexHole>
+# Hexagonal hole array centered around (x,y):
+# <uniqueStructName x y radiusX radiusY numberOfSides pitchX numberOfElementsX numberOfElementsY THETA hexHoleC>
+#
+<hexH 0 0 0.2 0.2 44 1 20 15 0 hexHole>
+<hexHC 40 0 0.2 0.2 44 1 20 15 0 hexHoleC>
+
+# VECTORIZED VERSIONS (numberOfSides parameter is omitted)
+# Vectorized Hexagonal hole array:
+# <uniqueStructName x y radiusX radiusY pitchX numberOfElementsX numberOfElementsY THETA hexHoleV>
+# Vectorized Hexagonal hole array centered around (x,y):
+# <uniqueStructName x y radiusX radiusY pitchX numberOfElementsX numberOfElementsY THETA hexHoleVC>
+#
+<sqrHV 60 0 0.2 0.2 1 20 15 0 hexHoleV>
+<sqrHVC 100 0 0.2 0.2 1 20 15 0 hexHoleVC>

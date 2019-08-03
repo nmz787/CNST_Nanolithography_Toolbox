@@ -1,0 +1,93 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# BOOLEANS AND AFFINE TRANSFORMS OF GENERAL AREA COPIES
+
+<devices struct>
+
+# create an ellipse in layer 11
+11 layer
+0 0 2 4 44 0 ellipse
+
+# create a pentagon in layer 7
+7 layer
+1 0 1.5 1.5 5 0 ellipse
+
+<dev2 struct>
+1 0 1.5 8 44 -22 ellipse
+
+
+
+
+#
+# Extracting shapes from STRUCTS
+#
+# <generalAreaName existingStructName gdsLayerToBeExtracted genArea>
+#
+# NOTE: generalAreaName CANNOT have any spaces or tabs only characters (numbers, letters, punctuations)
+#
+
+# extract shapes in layer 11
+<genArea1 devices 11 genArea>
+
+# extract shapes in layer 7
+<genArea2 devices 7 genArea>
+
+
+
+
+#
+# BOOLEANS between two already defined general Areas
+# <generalAreaName1 generalAreaName2 gdsLayerOfTheBooleanResult OPERATION>
+# OPERATION values are:
+#						and
+#						or
+#						subtract
+#						xor
+#
+
+# genArea1 AND genArea2 cast to GDS layer 11
+<resultsAND struct>
+<genArea1 genArea2 11 and>
+
+# genArea1 OR genArea2 cast to GDS layer 22
+<resultsOR struct>
+<genArea1 genArea2 22 or>
+
+# genArea1 SUBTRACT genArea2 cast to GDS layer 33
+<resultsSUBTRACT struct>
+<genArea1 genArea2 33 subtract>
+
+# genArea1 XOR genArea2 cast to GDS layer 44
+<resultsXOR struct>
+<genArea1 genArea2 44 xor>
+
+
+
+
+#
+# AFFINE TRANSFORMS OF GENERAL AREA COPIES
+#
+# <generalAreaName X Y MIRROR MAGNIFICATION ROTATE BIAS gdsLayerOfTheTransformResult genAreaCopy>
+#
+# CENTERED VERSION:
+#
+# <generalAreaName X Y MIRROR MAGNIFICATION ROTATE BIAS gdsLayerOfTheTransformResult genAreaCopyC>
+#
+# MIRROR VALUES are:
+#					X = mirroring around the x-axis
+#					Y = mirroring around the y-axis
+#					any value other than X or Y = NO MIRRORING
+#
+# BIAS expressed in micrometers: positive values grow/expand shapes, negative values shrink/contract the shapes
+#
+
+# extract shapes in layer 7 from struct called dev2
+<genArea4 dev2 7 genArea>
+
+<genAreaCopyResult struct>
+<genArea4 0 0 Y 1 0 0 101 genAreaCopy>
+
+<genAreaCopyCENTEREDResult struct>
+<genArea2 0 0 no 1 28 0 101 genAreaCopyC>
+

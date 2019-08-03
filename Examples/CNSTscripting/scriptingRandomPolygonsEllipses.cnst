@@ -1,0 +1,24 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# random patterns
+# <uniqueStructureName x y boxWidth boxHeight radius numberOfSides separation numberOfShapes numberOfIterations randomRotation randomPolygons>
+#
+# triangles created with numberOfSides = 3
+<randPat1 struct>
+4 layer
+<triangles 0 0 30 20 0.5 3 0.0 500 400 1 randomPolygons>
+
+
+# random ellipses
+# <uniqueStructureName x y boxWidth boxHeight radiusX radiusY numberOfSides separation numberOfShapes numberOfIterations randomRotation randomPolygons>
+#
+<randEllipse struct>
+<ellipses 0 0 30 20 0.5 1 44 0.1 500 400 1 randomEllipses>
+
+# <uniqueStructureName x y boxWidth boxHeight radiusX radiusY separation numberOfShapes numberOfIterations randomRotation randomPolygons>
+#
+# random vector ellipses
+<randEllipseV struct>
+<ellipsesV 0 0 30 20 0.5 1 0.1 100 1000 1 randomEllipsesV>
+

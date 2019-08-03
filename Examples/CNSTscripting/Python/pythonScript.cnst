@@ -1,0 +1,209 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# Creating a simple ellipse with Python<pythonEllipse struct>
+11 layer
+0 0 2 4 44 0 ellipse
+
+# 100 circles along a circular path
+<pythonCirclesAlongPath struct>
+1 layer
+10.0000 0.0000 0.2 0.2 44 0 ellipse
+2 layer
+9.9803 0.6279 0.2 0.2 44 0 ellipse
+3 layer
+9.9211 1.2533 0.2 0.2 44 0 ellipse
+4 layer
+9.8229 1.8738 0.2 0.2 44 0 ellipse
+5 layer
+9.6858 2.4869 0.2 0.2 44 0 ellipse
+6 layer
+9.5106 3.0902 0.2 0.2 44 0 ellipse
+7 layer
+9.2978 3.6812 0.2 0.2 44 0 ellipse
+8 layer
+9.0483 4.2578 0.2 0.2 44 0 ellipse
+9 layer
+8.7631 4.8175 0.2 0.2 44 0 ellipse
+10 layer
+8.4433 5.3583 0.2 0.2 44 0 ellipse
+11 layer
+8.0902 5.8779 0.2 0.2 44 0 ellipse
+12 layer
+7.7051 6.3742 0.2 0.2 44 0 ellipse
+13 layer
+7.2897 6.8455 0.2 0.2 44 0 ellipse
+14 layer
+6.8455 7.2897 0.2 0.2 44 0 ellipse
+15 layer
+6.3742 7.7051 0.2 0.2 44 0 ellipse
+16 layer
+5.8779 8.0902 0.2 0.2 44 0 ellipse
+17 layer
+5.3583 8.4433 0.2 0.2 44 0 ellipse
+18 layer
+4.8175 8.7631 0.2 0.2 44 0 ellipse
+19 layer
+4.2578 9.0483 0.2 0.2 44 0 ellipse
+20 layer
+3.6812 9.2978 0.2 0.2 44 0 ellipse
+21 layer
+3.0902 9.5106 0.2 0.2 44 0 ellipse
+22 layer
+2.4869 9.6858 0.2 0.2 44 0 ellipse
+23 layer
+1.8738 9.8229 0.2 0.2 44 0 ellipse
+24 layer
+1.2533 9.9211 0.2 0.2 44 0 ellipse
+25 layer
+0.6279 9.9803 0.2 0.2 44 0 ellipse
+26 layer
+-0.0000 10.0000 0.2 0.2 44 0 ellipse
+27 layer
+-0.6279 9.9803 0.2 0.2 44 0 ellipse
+28 layer
+-1.2533 9.9211 0.2 0.2 44 0 ellipse
+29 layer
+-1.8738 9.8229 0.2 0.2 44 0 ellipse
+30 layer
+-2.4869 9.6858 0.2 0.2 44 0 ellipse
+31 layer
+-3.0902 9.5106 0.2 0.2 44 0 ellipse
+32 layer
+-3.6812 9.2978 0.2 0.2 44 0 ellipse
+33 layer
+-4.2578 9.0483 0.2 0.2 44 0 ellipse
+34 layer
+-4.8175 8.7631 0.2 0.2 44 0 ellipse
+35 layer
+-5.3583 8.4433 0.2 0.2 44 0 ellipse
+36 layer
+-5.8779 8.0902 0.2 0.2 44 0 ellipse
+37 layer
+-6.3742 7.7051 0.2 0.2 44 0 ellipse
+38 layer
+-6.8455 7.2897 0.2 0.2 44 0 ellipse
+39 layer
+-7.2897 6.8455 0.2 0.2 44 0 ellipse
+40 layer
+-7.7051 6.3742 0.2 0.2 44 0 ellipse
+41 layer
+-8.0902 5.8779 0.2 0.2 44 0 ellipse
+42 layer
+-8.4433 5.3583 0.2 0.2 44 0 ellipse
+43 layer
+-8.7631 4.8175 0.2 0.2 44 0 ellipse
+44 layer
+-9.0483 4.2578 0.2 0.2 44 0 ellipse
+45 layer
+-9.2978 3.6812 0.2 0.2 44 0 ellipse
+46 layer
+-9.5106 3.0902 0.2 0.2 44 0 ellipse
+47 layer
+-9.6858 2.4869 0.2 0.2 44 0 ellipse
+48 layer
+-9.8229 1.8738 0.2 0.2 44 0 ellipse
+49 layer
+-9.9211 1.2533 0.2 0.2 44 0 ellipse
+50 layer
+-9.9803 0.6279 0.2 0.2 44 0 ellipse
+51 layer
+-10.0000 -0.0000 0.2 0.2 44 0 ellipse
+52 layer
+-9.9803 -0.6279 0.2 0.2 44 0 ellipse
+53 layer
+-9.9211 -1.2533 0.2 0.2 44 0 ellipse
+54 layer
+-9.8229 -1.8738 0.2 0.2 44 0 ellipse
+55 layer
+-9.6858 -2.4869 0.2 0.2 44 0 ellipse
+56 layer
+-9.5106 -3.0902 0.2 0.2 44 0 ellipse
+57 layer
+-9.2978 -3.6812 0.2 0.2 44 0 ellipse
+58 layer
+-9.0483 -4.2578 0.2 0.2 44 0 ellipse
+59 layer
+-8.7631 -4.8175 0.2 0.2 44 0 ellipse
+60 layer
+-8.4433 -5.3583 0.2 0.2 44 0 ellipse
+61 layer
+-8.0902 -5.8779 0.2 0.2 44 0 ellipse
+62 layer
+-7.7051 -6.3742 0.2 0.2 44 0 ellipse
+63 layer
+-7.2897 -6.8455 0.2 0.2 44 0 ellipse
+64 layer
+-6.8455 -7.2897 0.2 0.2 44 0 ellipse
+65 layer
+-6.3742 -7.7051 0.2 0.2 44 0 ellipse
+66 layer
+-5.8779 -8.0902 0.2 0.2 44 0 ellipse
+67 layer
+-5.3583 -8.4433 0.2 0.2 44 0 ellipse
+68 layer
+-4.8175 -8.7631 0.2 0.2 44 0 ellipse
+69 layer
+-4.2578 -9.0483 0.2 0.2 44 0 ellipse
+70 layer
+-3.6812 -9.2978 0.2 0.2 44 0 ellipse
+71 layer
+-3.0902 -9.5106 0.2 0.2 44 0 ellipse
+72 layer
+-2.4869 -9.6858 0.2 0.2 44 0 ellipse
+73 layer
+-1.8738 -9.8229 0.2 0.2 44 0 ellipse
+74 layer
+-1.2533 -9.9211 0.2 0.2 44 0 ellipse
+75 layer
+-0.6279 -9.9803 0.2 0.2 44 0 ellipse
+76 layer
+-0.0000 -10.0000 0.2 0.2 44 0 ellipse
+77 layer
+0.6279 -9.9803 0.2 0.2 44 0 ellipse
+78 layer
+1.2533 -9.9211 0.2 0.2 44 0 ellipse
+79 layer
+1.8738 -9.8229 0.2 0.2 44 0 ellipse
+80 layer
+2.4869 -9.6858 0.2 0.2 44 0 ellipse
+81 layer
+3.0902 -9.5106 0.2 0.2 44 0 ellipse
+82 layer
+3.6812 -9.2978 0.2 0.2 44 0 ellipse
+83 layer
+4.2578 -9.0483 0.2 0.2 44 0 ellipse
+84 layer
+4.8175 -8.7631 0.2 0.2 44 0 ellipse
+85 layer
+5.3583 -8.4433 0.2 0.2 44 0 ellipse
+86 layer
+5.8779 -8.0902 0.2 0.2 44 0 ellipse
+87 layer
+6.3742 -7.7051 0.2 0.2 44 0 ellipse
+88 layer
+6.8455 -7.2897 0.2 0.2 44 0 ellipse
+89 layer
+7.2897 -6.8455 0.2 0.2 44 0 ellipse
+90 layer
+7.7051 -6.3742 0.2 0.2 44 0 ellipse
+91 layer
+8.0902 -5.8779 0.2 0.2 44 0 ellipse
+92 layer
+8.4433 -5.3583 0.2 0.2 44 0 ellipse
+93 layer
+8.7631 -4.8175 0.2 0.2 44 0 ellipse
+94 layer
+9.0483 -4.2578 0.2 0.2 44 0 ellipse
+95 layer
+9.2978 -3.6812 0.2 0.2 44 0 ellipse
+96 layer
+9.5106 -3.0902 0.2 0.2 44 0 ellipse
+97 layer
+9.6858 -2.4869 0.2 0.2 44 0 ellipse
+98 layer
+9.8229 -1.8738 0.2 0.2 44 0 ellipse
+99 layer
+9.9211 -1.2533 0.2 0.2 44 0 ellipse
+100 layer
+9.9803 -0.6279 0.2 0.2 44 0 ellipse

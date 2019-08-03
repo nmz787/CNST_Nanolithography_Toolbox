@@ -1,0 +1,21 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+<phC struct>
+#
+# <uniqueStructName x y radius pitchX numberOfElementsX numberOfElementsY numberOfSides arraySpace phC>
+<singleObjectPHC 0 0 0.125 0.5 20 4 34 1.0 phC>
+
+<phCV struct>
+# <uniqueStructName x y radius pitchX numberOfElementsX numberOfElementsY arraySpace phC>
+<singleObjectPHCV 0 0 0.125 0.5 20 4 1.0 phCV>
+
+<hex struct>
+# <uniqueStructName x y radius pitchX numberOfElementsX numberOfElementsY numberOfSides phC>
+<singleObjectHEX 0 0 0.125 0.5 20 4 34 hex>
+
+<hexV struct>
+# <uniqueStructName x y radius pitchX numberOfElementsX numberOfElementsY phC>
+<singleObjectHEXV 0 0 0.125 0.5 20 4 hexV>
+

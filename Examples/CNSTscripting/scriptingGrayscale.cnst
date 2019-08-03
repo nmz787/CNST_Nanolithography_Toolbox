@@ -1,0 +1,219 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# **** **** **** **** **** **** **** **** **** **** **** ****
+# GRAYSCALE Objects - Evenly (E) distributed segments
+#
+# Grayscale rectangles evenly distributed segments
+# x y dx dy numberOfSegments THETArotationAboutXY grayER
+#
+<grayEvenRect struct>
+0 0 10 10 20 0 grayER
+# rotated by 45
+-25 -10 10 10 20 45 grayER
+
+# Grayscale N-GONs evenly distributed segments
+# x y rx ry numberOfSegments numberOfPolygonSides THETArotationAboutXY grayENgon
+#
+<grayEvenNgon struct>
+# 44 sides
+0 0 10 10 20 44 0 grayENgon
+# 8 sides
+20 15 5 5 20 8 0 grayENgon
+# 8 sides rotated by 22.5 degrees
+20 0 5 5 20 8 22.5 grayENgon
+
+
+
+# **** **** **** **** **** **** **** **** **** **** **** ****
+# GRAYSCALE Objects - User defined (UD) distribution of grayscale segments
+#
+# Grayscale rectangles
+# x y dx1 dy1 dx2 dy2 .... dxn dyn THETArotationAboutXY grayUDR
+<grayUserDefinedRect struct>
+0 0
+4.482135954999579	4.482135954999579
+3.4821359549995794	3.4821359549995794
+3.0679223926264845	3.0679223926264845
+2.750085147430702	2.750085147430702
+2.4821359549995794	2.4821359549995794
+2.2460679774997896	2.2460679774997896
+2.0326462122164015	2.0326462122164015
+1.836384643934989	1.836384643934989
+1.6537088302533893	1.6537088302533893
+1.4821359549995796	1.4821359549995796
+1.3198582948312	1.3198582948312
+1.1655111646441798	1.1655111646441798
+1.0180343398618252	1.0180343398618252
+0.8765846795355905	0.8765846795355905
+0.7404785682256383	0.7404785682256383
+0.6091526087921626	0.6091526087921626
+0.4821359549995796	0.4821359549995796
+0.35903032938191903	0.35903032938191903
+0.23949526788029485	0.23949526788029485
+0.12323701145890563	0.12323701145890563
+0 grayUDR
+
+# Grayscale N-GONs
+# x y rx1 ry1 rx2 ry2 .... rxn ryn numberOfPolygonSides THETArotationAboutXY grayENgon
+<grayUserDefinedNgon struct>
+0 0
+4.482135954999579	4.482135954999579
+3.4821359549995794	3.4821359549995794
+3.0679223926264845	3.0679223926264845
+2.750085147430702	2.750085147430702
+2.4821359549995794	2.4821359549995794
+2.2460679774997896	2.2460679774997896
+2.0326462122164015	2.0326462122164015
+1.836384643934989	1.836384643934989
+1.6537088302533893	1.6537088302533893
+1.4821359549995796	1.4821359549995796
+1.3198582948312	1.3198582948312
+1.1655111646441798	1.1655111646441798
+1.0180343398618252	1.0180343398618252
+0.8765846795355905	0.8765846795355905
+0.7404785682256383	0.7404785682256383
+0.6091526087921626	0.6091526087921626
+0.4821359549995796	0.4821359549995796
+0.35903032938191903	0.35903032938191903
+0.23949526788029485	0.23949526788029485
+0.12323701145890563	0.12323701145890563
+44 0 grayUDNgon
+
+
+
+
+#
+# **** **** **** **** GRAYSCALE RAMPS **** **** **** ****
+#
+# Grayscale Uniformly Segmented Ramp (UP "OR" DOWN)
+# x y xLength yHeight numberOfSegments UP THETA grayERamp
+#	UP value assumes:
+#					  1 for GDS layers ranging from 0 to (n-1)
+#					  0 for GDS layers ranging from (n-1) to 0
+#
+<grayRampUp struct>
+# n=18 segments, UP = 1
+0 0 10 20 18 1 0 grayERamp
+#
+<grayRampDown struct>
+# n=18 segments, UP = 0
+0 0 10 20 18 0 0 grayERamp
+
+#
+# Grayscale Uniformly Segmented Double Ramp (UP "AND" DOWN)
+# x y xLength yHeight numberOfSegments THETA grayERamp
+#
+# n=19 segments
+<grayRamp2 struct>
+0 0 10 20 19 0 grayERamp2
+
+
+
+
+#
+# Gray Scale Ramp with USER DEFINED SEGMENTS (UP "OR" DOWN)
+# x y dx1 dx2 .... dxn yHeight numberOfSegments UP THETA grayUDRamp
+#	UP value assumes:
+#					  1 for GDS layers ranging from 0 to (n-1)
+#					  0 for GDS layers ranging from (n-1) to 0
+#
+<grayUserDefinedRAMPup struct>
+# UP = 1
+0 0
+0.0
+1.0
+1.4142135623730951
+1.7320508075688772
+2.0
+2.23606797749979
+2.449489742783178
+2.6457513110645907
+2.8284271247461903
+3.0
+3.1622776601683795
+3.3166247903554
+3.4641016151377544
+3.605551275463989
+3.7416573867739413
+3.872983346207417
+4.0
+4.123105625617661
+4.242640687119285
+4.358898943540674
+2 1 0 grayUDRamp
+
+
+<grayUserDefinedRAMPdown struct>
+# UP = 0
+0 0
+0.0
+1.0
+1.4142135623730951
+1.7320508075688772
+2.0
+2.23606797749979
+2.449489742783178
+2.6457513110645907
+2.8284271247461903
+3.0
+3.1622776601683795
+3.3166247903554
+3.4641016151377544
+3.605551275463989
+3.7416573867739413
+3.872983346207417
+4.0
+4.123105625617661
+4.242640687119285
+4.358898943540674
+2 0 0 grayUDRamp
+
+
+#
+# Grayscale Ramp with USER DEFINED SEGMENTS (UP "AND" DOWN)
+# x y dx1 dx2 .... dxn yHeight numberOfSegments THETA grayUDRamp
+#
+<grayUserDefinedRAMP2 struct>
+0 0
+0
+1.0
+1.4142135623730951
+1.7320508075688772
+2.0
+2.23606797749979
+2.449489742783178
+2.6457513110645907
+2.8284271247461903
+3.0
+3.1622776601683795
+3.3166247903554
+2 0 grayUDRamp2
+
+
+
+
+#
+# **** **** **** **** GRAYSCALE ARCs **** **** **** ****
+#
+# Grayscale overlapping ARC segments
+# x y innerRadius outerRadius numberOfSegments numberOfSidesForEachSegment THETA graySpiralStairOverlap
+#
+<graySpiralStairTorusOverlap struct>
+0 0 2 8 16 20 0 graySpiralStairOverlap
+
+<graySpiralStairCircleOverlap struct>
+0 0 0 8 16 20 0 graySpiralStairOverlap
+
+
+#
+# Grayscale overlapping ARC segments
+# x y innerRadius outerRadius numberOfSegments numberOfSidesForEachSegment THETA graySpiralStairOverlap
+#
+<graySpiralStairTorus struct>
+0 0 2 8 16 20 0 graySpiralStair
+
+<graySpiralStairCircle struct>
+0 0 0 8 16 20 0 graySpiralStair
+
+

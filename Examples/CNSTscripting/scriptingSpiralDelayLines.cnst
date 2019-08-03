@@ -1,0 +1,42 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+
+<delayLineSpirals struct>
+
+# ******************************
+# SPIRAL DELAY LINES
+# ******************************
+# 3 spiral delay line constructors
+# 
+# Archimedes Spiral Delay Line Version 1
+# x y width Nturns Separation increment Length THETA ENDCAPS spiralDelayLineArch
+#
+# Fermat Spiral Delay Line
+# x y width Nturns Separation increment Length THETA ENDCAPS spiralDelayLineFermat
+#
+# Archimedes Spiral Delay Line Version 2
+# x y width Nturns Separation Points SkippedTurns Length THETA ENDCAPS spiralDelayLineArchV2
+#
+
+11 layer
+-10 20 0.2 2 1 0.01 10 90 1 spiralDelayLineArch
+
+7 layer
+-44 -8 0.2 4 4 0.01 50 40 1 spiralDelayLineFermat
+
+4 layer
+# Below are several Archimedes Spiral Delay Line Version 2 devices with varying NumberOfSkippedTurns
+#
+# NumberOfSkippedTurns = 0
+0 0 0.4 5 2 100 0 20 0 1 spiralDelayLineArchV2
+#
+# NumberOfSkippedTurns = 2
+44 0 0.4 5 2 100 2 20 90 1 spiralDelayLineArchV2
+#
+# NumberOfSkippedTurns = 4
+104 0 0.4 5 2 100 4 50 40 1 spiralDelayLineArchV2
+#
+# NumberOfSkippedTurns = 8
+164 0 0.4 5 2 100 8 40 0 1 spiralDelayLineArchV2

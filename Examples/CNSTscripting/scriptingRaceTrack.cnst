@@ -1,0 +1,9 @@
+0.001 gdsReso
+
+<raceTrackTest struct>
+# ******** RACETRACK
+# racetrack with rotation about point center point
+#
+# <x y length waveGuideWidth innerRadius rotationDegrees curvedSectionNumberOfSides raceTrack>
+#
+<0 0 10 0.5 4.0 0 88 raceTrack>

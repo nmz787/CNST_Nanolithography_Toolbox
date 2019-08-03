@@ -1,0 +1,44 @@
+0.001 gdsReso
+0.01 shapeReso
+
+# 250um bondpad
+<bondPad250um struct>
+0 0 250 250 0 rectangle
+
+# 1/8 electrode
+<electrodeSegment struct>
+<bondPad250um 0 0 5 1 500 1 1 arrayRect>
+<625 250 625 900 2200 625 2200 2150 20 0 bezierCurve>
+<1125 250 1125 900 2250 625 2250 2150 20 0 bezierCurve>
+<1625 250 1625 900 2300 625 2300 2150 20 0 bezierCurve>
+<2125 250 2125 900 2350 625 2350 2150 20 0 bezierCurve>
+# JEOL alignment crosses
+500 500 10	60 0 cross
+750 750 10	60 0 cross
+1000 1000 10	60 0 cross
+1250 1250 10	60 0 cross
+1500 1500 10	60 0 cross
+
+#1/2 electrode
+<electrodeHalf struct>
+<electrodeSegment 0 0 N 1 0 instance>
+<electrodeSegment 4750 0 Y 1 0 instance>
+<electrodeSegment 0 0 Y 1 -90 instance>
+<electrodeSegment 4750 0 N 1 90 instance>
+
+# electrode set
+<electrodes struct>
+<electrodeHalf 0 0 N 1 0 instance>
+<electrodeHalf 0 4750 X 1 0 instance>
+# electrode labels top and bottom - Letters
+{0	8	Serif	100	410	75	0	0	500	0	autoOutLett	labelMaker}
+{0	8	Serif	100	410	4575	0	0	500	0	autoOutLett	labelMaker}
+# electrode labels left and right - Numbers
+{8	0	Serif	100	0	0	100	4275	0	500	autoOutLett	labelMaker}
+{8	0	Serif	100	0	0	4600	4275	0	500	autoOutLett	labelMaker}
+
+# top cell centered electrode cell using instanceSym
+<top struct>
+<electrodes 0 0 0 0 4750 4750 N 1 0 instanceSym>
+
+

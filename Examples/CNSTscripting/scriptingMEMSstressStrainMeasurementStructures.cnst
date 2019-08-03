@@ -1,0 +1,34 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+4 layer
+
+# **************** **************** **************** ****************
+# GUCKEL RINGS
+# **************** **************** **************** ****************
+#
+# Single Guckel Ring Structure
+# x y ringWidth radius numberOfSides beamWidth bondPadSquareSize connectorLength connectorWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY GuckelRing
+<guckelRing struct>
+11 layer
+0 0 1 10 100 1 4 1.2 2 0.2 7 0 GuckelRing
+
+#
+# Guckel Ring Array Structure
+# x y ringWidth radiusStart radiusEnd deltaRadius numberOfSides beamWidth bondPadSquareSize connectorLength connectorWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY GuckelRingArray
+<guckelRingArray struct>
+11 layer
+0 0 1 10 20 1 100 1 4 1.2 2 0.2 7 0 GuckelRingArray
+
+
+# **************** **************** **************** ****************
+# DIAMOND RINGS
+# **************** **************** **************** ****************
+#
+# Single Diamond Ring Structure
+# x y width1 width2 width3 length1 length2 length3 baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY diamondRing
+<diamondRing struct>
+7 layer
+0 0 1 4 1.4 10 4 15 7 6.7 0.2 11 0 diamondRing
+

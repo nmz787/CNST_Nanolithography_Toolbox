@@ -1,0 +1,231 @@
+0.001 gdsReso
+0.001 shapeReso
+2 layer
+
+
+
+
+# ******** INFINITE (R2 = infinity) RING DISC
+# straight waveguide above the ring and disc
+#
+# 2 constructors:
+#
+# <x y discRadius numberOfDiscSides gap waveGuideLength waveGuideWidth endcap discInfinite>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveGuideLength waveGuideWidth endcap ringInfinite>
+#
+<discInfiniteTest struct>
+<0 0 10 128 0.2 40 0.5 0 discInfinite>
+#
+<ringInfiniteTest struct>
+<0 0 10 0.4 64 0.2 40 0.5 0 ringInfinite>
+
+
+
+
+# ******** INFINITE (R2 = infinity) RING DISC INVERSE
+# straight INVERSE waveguide above the ring and disc
+#
+# 2 constructors:
+#
+# <x y discRadius numberOfDiscSides gap waveGuideLength waveGuideWidth exposureSleeveWidth endcap discInfiniteInv>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveGuideLength waveGuideWidth exposureSleeveWidth endcap ringInfiniteInv>
+#
+<INVERSEdiscInfiniteTest struct>
+<0 0 10 128 0.2 40 0.5 1.0 0 discInfiniteInv>
+#
+<INVERSEringInfiniteTest struct>
+<0 0 10 0.4 64 0.2 40 0.5 1.0 0 ringInfiniteInv>
+
+
+
+
+# ******** INFINITE (R2 = infinity) RING DISC INVERSE POSITIVE TONE RESIST
+# straight INVERSE POSITIVE TONE RESIST waveguide above the ring and disc - used with positive tone resist
+#
+# 2 constructors:
+#
+# <x y discRadius ringDiscSleeveWidth numberOfDiscSides gap waveGuideLength waveGuideWidth exposureSleeveWidth endcap discInfiniteInv>
+# <x y ringInnerRadius ringWidth ringDiscSleeveWidth numberOfRingSides gap waveGuideLength waveGuideWidth exposureSleeveWidth endcap ringInfiniteInv>
+#
+<InvPOSITIVEdiscInfiniteTest struct>
+<0 0 84 2.0 128 4.0 10000 0.4 2.5 0 discInfiniteInvPos>
+#
+<InvPOSITIVEringInfiniteTest struct>
+<0 0 84 0.5 4.0 128 0.8 10000 0.4 5.0 0 ringInfiniteInvPos>
+
+
+
+
+#
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# SYMMETRIC RING (R2 = -Rdisc) DISC (R2 = -Rdisc)
+#
+# 2 constructors angle defined:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection endcap discSymmetricA>
+# <x y ringOuterRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection endcap ringSymmetricA>
+#
+# 2 constructors coupling length defined defined:
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection endcap discSymmetricLCA>
+# <x y ringOuterRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection endcap ringSymmetricLCA>
+#
+<discSymmetricAtest struct>
+<0 0 5 88 0.1 45.0 44 0.5 22 0 discSymmetricA>
+#
+<ringSymmetricAtest struct>
+<0 0 5 1.0 88 0.1 45.0 44 0.5 22 0 ringSymmetricA>
+#
+# coupling length = 8.88
+<discSymmetricLCAtest struct>
+<0 0 5 88 0.1 8.88 44 0.5 22 0 discSymmetricLCA>
+#
+<ringSymmetricLCATest struct>
+<0 0 5 1.0 88 0.1 8.88 44 0.5 22 0 ringSymmetricLCA>
+
+
+
+
+#
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# ARC INVERSE SYMMETRIC RING (R2 > Rring) DISC (R2 > Rdisc)
+#
+# 2 constructors angle defined:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap discSymmetricInvA>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap ringSymmetricInvA>
+#
+# 2 constructors coupling length defined defined:
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap discSymmetricInvA>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap ringSymmetricInvA>
+#
+<INVdiscSymmetricInvATest struct>
+<0 0 5 88 0.1 45.0 44 0.5 0.8 22 0 discSymmetricInvA>
+#
+<INVringSymmetricInvATest struct>
+<0 0 5 1.0 88 0.1 45.0 44 0.5 0.8 22 0 ringSymmetricInvA>
+#
+# coupling length = 8.88
+<INVdiscSymmetricInvLCATest struct>
+<0 0 5 88 0.1 8.88 44 0.5 0.88 22 0 discSymmetricInvLCA>
+#
+<INVringSymmetricInvLCATest struct>
+<0 0 5 1.0 88 0.1 8.88 44 0.5 0.88 22 0 ringSymmetricInvLCA>
+
+
+
+
+#
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# INVERSE POSITIVE TONE RESIST PULLEY RING (R2 > Rring) DISC (R2 > Rdisc)
+#
+# 2 constructors angle defined:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap discSymmetricInvPosA>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap ringSymmetricInvPosA>
+#
+# 2 constructors coupling length defined defined:
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap discSymmetricInvPosLCA>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap ringSymmetricInvPosLCA>
+#
+<InvPOSdiscSymmetricInvPosATest struct>
+<0 0 84 8.0 128 0.2 25.0 128 0.4 20 500 0 discSymmetricInvPosA>
+#
+<InvPOSringSymmetricInvPosATest struct>
+<0 0 84 0.5 8.0 128 0.2 25.0 128 0.4 20 500 0 ringSymmetricInvPosA>
+#
+# coupling length = 200
+<InvPOSdiscSymmetricInvPosLCATest struct>
+<0 0 84 8.0 128 0.2 200.0 128 0.4 20 500 0 discSymmetricInvPosLCA>
+#
+<InvPOSringSymmetricInvPosLCATest struct>
+<0 0 84 0.5 8.0 128 0.2 200.0 128 0.4 20 500 0 ringSymmetricInvPosLCA>
+
+
+
+
+#
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# PULLEY RING (R2 > Rring) DISC (R2 > Rdisc)
+#
+# 2 constructors angle defined:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection endcap discPulleyA>
+# <x y ringOuterRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection endcap ringPulleyA>
+#
+# 2 constructors coupling length defined defined:
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection endcap discPulleyLCA>
+# <x y ringOuterRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection endcap ringPulleyLCA>
+#
+<discPulleyAtest struct>
+<0 0 5 88 0.1 45.0 44 0.5 22 1 discPulleyA>
+#
+<ringPulleyAtest struct>
+<0 0 5 1.0 88 0.1 45.0 44 0.5 22 1 ringPulleyA>
+#
+# coupling length = 8.88
+<discPulleyLCAtest struct>
+<0 0 5 88 0.1 8.88 44 0.5 22 1 discPulleyLCA>
+#
+<ringPulleyLCATest struct>
+<0 0 5 1.0 88 0.1 8.88 44 0.5 22 1 ringPulleyLCA>
+
+
+
+#
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# INVERSE PULLEY RING (R2 > Rring) DISC (R2 > Rdisc)
+#
+# 2 constructors angle defined:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap discPulleyInvA>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap ringPulleyInvA>
+#
+# 2 constructors coupling length defined defined:
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap discPulleyInvA>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection endcap ringPulleyInvA>
+#
+<INVdiscPulleyInvATest struct>
+<0 0 5 88 0.1 45.0 44 0.5 0.8 22 0 discPulleyInvA>
+#
+<INVringPulleyInvATest struct>
+<0 0 5 1.0 88 0.1 45.0 44 0.5 0.8 22 0 ringPulleyInvA>
+#
+# coupling length = 8.88
+<INVdiscPulleyInvLCATest struct>
+<0 0 5 88 0.1 8.88 44 0.5 0.88 22 0 discPulleyInvLCA>
+#
+<INVringPulleyInvLCATest struct>
+<0 0 5 1.0 88 0.1 8.88 44 0.5 0.88 22 0 ringPulleyInvLCA>
+
+
+
+
+#
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# INVERSE POSITIVE TONE RESIST PULLEY RING (R2 > Rring) DISC (R2 > Rdisc)
+#
+# 2 constructors angle defined:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection discPulleyInvPosA>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection ringPulleyInvPosA>
+#
+# 2 constructors coupling length defined defined:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection discPulleyInvPosA>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection ringPulleyInvPosA>
+#
+<InvPOSdiscPulleyInvPosATest struct>
+<0 0 84 8.0 128 0.2 25.0 128 0.4 20 500 0 discPulleyInvPosA>
+#
+<InvPOSringPulleyInvPosATest struct>
+<0 0 84 0.5 8.0 128 0.2 25.0 128 0.4 20 500 0 ringPulleyInvPosA>
+#
+# coupling length = 200
+<InvPOSdiscPulleyInvPosLCATest struct>
+<0 0 84 8.0 128 0.2 200.0 128 0.4 20 500 0 discPulleyInvPosLCA>
+#
+<InvPOSringPulleyInvPosLCATest struct>
+<0 0 84 0.5 8.0 128 0.2 200.0 128 0.4 20 500 0 ringPulleyInvPosLCA>
+
+
+
+

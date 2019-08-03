@@ -1,0 +1,110 @@
+0.001 gdsReso
+
+0.100 shapeReso
+
+
+
+
+# create a structure (Cell) called myPattern
+<myPattern struct>
+# creating an 8 pointed star and circle
+4 layer
+0 0 10 5.0 8 22 star
+12 4 0.5 0.5 88 0 ellipse
+
+# change layer and create an ellipse above the star
+1 layer
+14 8 1 8 44 0 ellipse
+
+# create Archimedes spiral
+13 layer
+0 0 1.0 4 2.0 0.01 spiralArch
+
+# change layer, set shape resolution to 10nm and create some text
+0.010 shapeReso
+4 layer
+<{{CNST}} {{Arial}} 5 0 -14 textgds>
+
+2 layer
+<{{Nano}} {{Arial}} 5 0 14 textgdsC>
+
+
+
+
+# ******************************
+# INSTANCE
+# ******************************
+# instance constructor:
+#	MIRROR parameter:
+#				X - mirroring structure around the x-axis
+#				Y - mirroring structure around the y-axis
+#				N - unmirrored structure
+#
+# <structureToBeInstanced  x  y  MIRROR Magnification Rotation textgds>
+#
+
+<myPatternScaled struct>
+<myPattern 0 0 N 0.1 0 instance>
+
+
+
+
+# ******************************
+# RECTANGULAR ARRAYS
+# ******************************
+# arrayRect constructor:
+# 		
+#
+# <structureToBeInstanced  x  y  numberOfColumns numberOfRows pitchX pitchY 1 arrayRect>
+# <structureToBeInstanced  x  y  numberOfColumns numberOfRows Xend Yend 2 arrayRect>
+#
+
+<rectangularArray struct>
+<myPattern 0 0 10 8 40 80 1 arrayRect>
+
+
+
+
+# ******************************
+# POLAR ARRAYS
+# ******************************
+# arrayPolar constructor
+#				- first define a structure to place polar array - for instance myPolarArray below
+#				- there are 4 versions of the polar array 
+#				- VERSIONS 1, 1R, 2 and 2R are the integers directly before the arrayPolar constructor
+# <structureToBeArrayed	startAngle stopAngle deltaAngle radiusStart radiusEnd deltaRadius 1 arrayPolar>
+# <structureToBeArrayed	startAngle stopAngle deltaAngle radiusStart radiusEnd deltaRadius 1R arrayPolar>
+# <structureToBeArrayed	startAngle stopAngle numberOfAngles radiusStart radiusEnd numberOfRadii 2 arrayPolar>
+# <structureToBeArrayed	startAngle stopAngle numberOfAngles radiusStart radiusEnd numberOfRadii 2R arrayPolar>
+#
+
+# polar array VERSION 1 and 1R
+<polarArrayV1  struct>
+# myPattern struct will be instanced into myPolarArray structure using VERSION 1 of the arrayPolar constructor
+<myPattern	340.0 220.0 30.0 100.0 250.0 50.0 1 arrayPolar>
+
+<polarArrayV1rotated  struct>
+# myPattern struct will be instanced into myPolarArray structure using VERSION 1R of the arrayPolar constructor
+# 1R rotates each element appropriately
+<myPattern	340.0 220.0 30.0 100.0 250.0 50.0 1R arrayPolar>
+
+# polar array VERSION 2 and 2R
+<polarArrayV2 struct>
+<myPattern 20.0 300.0 14 100.0 250.0 4 2 arrayPolar>
+
+<polarArrayV2rotated struct>
+<myPattern 20.0 300.0 14 100.0 250.0 4 2R arrayPolar>
+
+
+
+
+
+# ******************************
+# HEXAGONAL ARRAYS
+# ******************************
+#
+# <structureToBeArrayed	x y numberOfColumns numberOfRows spacing arrayHex>
+#
+<hexagonalArray struct>
+<myPattern 0 0 4 5 100 arrayHex>
+

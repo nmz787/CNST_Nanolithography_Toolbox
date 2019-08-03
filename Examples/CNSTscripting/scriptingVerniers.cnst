@@ -1,0 +1,18 @@
+0.001 gdsReso
+
+0.100 shapeReso
+
+<verniersTest struct>
+
+# ******************************
+# VERNIERS
+# ******************************
+# vernier constructor
+#
+# <x y layerA layerB vernierResolution ticks labelA labelB fontSize lineWidth lineLength pitch vernier>
+# Note: font resolution set by the shapeReso parameter
+#
+<0 0 1 4 0.01 11 Lyr1 Layer4 10 1 50 4 verniers>
+
+<200 -100 16 11 0.01 11 L16 Lyr11 10 1 50 4 verniers>
+

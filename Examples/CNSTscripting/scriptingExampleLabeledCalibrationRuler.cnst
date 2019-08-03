@@ -1,0 +1,22 @@
+0.001 gdsReso
+0.001 shapeReso
+4 layer
+# Example - Labelled Calibration Ruler
+
+#### tick marks 5um long and 250nm wide
+<tickMark struct>
+-0.125 0 0.125 5 0 rectangle
+#### tick mark extension 2.5um long and 250nm wide
+<tickMarkExtension struct>
+-0.125 0 0.125 2.5 0 rectangle
+
+<calibrationRuler struct>
+# 20um long
+<tickMark 0 0 21 1 1 0 1 arrayRect>
+# add tick mark extensions every 5um
+<tickMarkExtension 5 5 4 1 5 0 1 arrayRect>
+# add tick mark extensions every 10um
+<tickMarkExtension 10 7.5 2 1 10 0 1 arrayRect>
+
+# tick mark label (TAB delimited)
+{0	5	10	15	20um	1	5	Arial	2	-0.5	-2	0	0	5	1	rowCol	labelMaker}

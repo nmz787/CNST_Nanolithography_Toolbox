@@ -1,0 +1,21 @@
+0.001 gdsReso
+0.001 shapeReso
+
+
+# Calling MULTIPLE FILES examples
+
+<devices struct>
+
+# create an ellipse in layer 11
+11 layer
+0 0 2 4 44 0 ellipse
+
+# create a pentagon in layer 7
+7 layer
+1 0 1.5 1.5 5 0 ellipse
+
+# calling file scriptingMultiFile2.cnst
+<scriptingMultiFile2 fileName>
+
+<dev2 struct>
+1 0 1.5 8 44 -22 ellipse

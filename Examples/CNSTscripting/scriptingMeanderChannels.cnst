@@ -1,0 +1,69 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+
+# Meander Channels with rectangular reservoirs
+#
+# NOTE: features are fractured to avoid exceeding maximum number of allowable GDS vertices per shape.
+# <x y L1 H1 L2 H2 width amplitude numberOfPeriods numberOfSineWaveSegments a b c thetaXY meanderSin>
+# <x y L1 H1 L2 H2 width amplitude numberOfPeriods a b c thetaXY meanderSqr>
+# <x y L1 H1 L2 H2 width amplitude numberOfPeriods a b c thetaXY meanderRamp>
+# <x y L1 H1 L2 H2 width amplitude numberOfPeriods a b c thetaXY meanderTri>
+#
+<meanderSineTest struct>
+4 layer
+<0 0 10 5 8 14 0.2 10 4 400 4 10 8 0 meanderSin>
+7 layer
+# without L1, H1 (left rectangle)
+<0 -25 0 0 8 14 0.2 10 4 400 4 10 8 0 meanderSin>
+# without L2, H2 (right rectangle)
+<0 -50 10 5 0 0 0.2 10 4 400 4 10 8 0 meanderSin>
+# without both end rectangular reservoirs
+<0 -75 0 0 0 0 0.2 10 4 400 4 10 8 0 meanderSin>
+# rotation = 55 degrees
+<10 20 10 5 8 14 0.2 10 4 400 4 10 8 55 meanderSin>
+
+<meanderSquareTest struct>
+4 layer
+<0 0 10 5 8 14 0.2 10 4 4 10 8 0 meanderSqr>
+7 layer
+# without L1, H1 (left rectangle)
+<0 -25 0 0 8 14 0.2 10 4 4 10 8 0 meanderSqr>
+# without L2, H2 (right rectangle)
+<0 -50 10 5 0 0 0.2 10 4 4 10 8 0 meanderSqr>
+# without both end rectangular reservoirs
+<0 -75 0 0 0 0 0.2 10 4 4 10 8 0 meanderSqr>
+# rotation = 55 degrees
+<10 20 10 5 8 14 0.2 10 4 4 10 8 55 meanderSqr>
+
+<meanderRampTest struct>
+4 layer
+<0 0 10 5 8 14 0.2 10 4 4 10 8 0 meanderRamp>
+7 layer
+# without L1, H1 (left rectangle)
+<0 -25 0 0 8 14 0.2 10 4 4 10 8 0 meanderRamp>
+# without L2, H2 (right rectangle)
+<0 -50 10 5 0 0 0.2 10 4 4 10 8 0 meanderRamp>
+# without both end rectangular reservoirs
+<0 -75 0 0 0 0 0.2 10 4 4 10 8 0 meanderRamp>
+# rotation = 55 degrees
+<10 20 10 5 8 14 0.2 10 4 4 10 8 55 meanderRamp>
+
+<meanderTriangleTest struct>
+4 layer
+<0 0 10 5 8 14 0.2 10 4 4 10 8 0 meanderTri>
+7 layer
+# without L1, H1 (left rectangle)
+<0 -25 0 0 8 14 0.2 10 4 4 10 8 0 meanderTri>
+# without L2, H2 (right rectangle)
+<0 -50 10 5 0 0 0.2 10 4 4 10 8 0 meanderTri>
+# without both end rectangular reservoirs
+<0 -75 0 0 0 0 0.2 10 4 4 10 8 0 meanderTri>
+# rotation = 55 degrees
+<10 20 10 5 8 14 0.2 10 4 4 10 8 55 meanderTri>
+
+
+
+
+

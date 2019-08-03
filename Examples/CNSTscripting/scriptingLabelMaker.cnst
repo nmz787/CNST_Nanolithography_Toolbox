@@ -1,0 +1,35 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+
+<spiral struct>
+0 0 3.4 4 5 0.01 spiralarch
+
+
+<autoOuterTest struct>
+{4	4			Serif	44.44	0	-34	-70	-100	100	100	autoOut	labelMaker}
+<spiral 10 -380 4 4 100 100 1 arrayRect>
+
+<autoRowColumnTest struct>
+{4	4		Arial	44.44	0	0	0	0	110	110	autoRowCol	labelMaker}
+<spiral 28 -370 4 4 110 110 1 arrayRect>
+
+
+
+<autoOuterLetterTest struct>
+{4	4			Serif	44.44	-5	-34	-70	-100	100	100	autoOutLett	labelMaker}
+<spiral 10 -380 4 4 100 100 1 arrayRect>
+
+<autoRowColumnLettersTest struct>
+{4	4		Arial	44.44	5	-5	0	0	110	110	autoRowColLett	labelMaker}
+<spiral 28 -370 4 4 110 110 1 arrayRect>
+
+
+<outerTest struct>
+{L1	lb2	lb3	L4	L5	lb6	lb7	lb8	4	4		Serif	44.44	-15	-34	-88	-100	100	100	out	labelMaker}
+<spiral 10 -380 4 4 100 100 1 arrayRect>
+
+<rowColumnTest struct>
+{CNST	NIST	MEMS	NEMS	2	2		Arial	44.44	5	-5	0	0	200	200	rowCol	labelMaker}
+<spiral 70 -250 2 2 200 200 1 arrayRect>

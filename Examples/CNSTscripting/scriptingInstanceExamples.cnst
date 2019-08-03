@@ -1,0 +1,55 @@
+0.001 gdsReso
+
+0.100 shapeReso
+
+
+<device struct>
+# Thomas's structure
+11 layer
+<20 10 5.0 128 5.5 11 22 10.4 4.0 3.0 0.9 7.25 0.52 25.0 4.8 1.00 0.44 0.10 20.00 0 wgdcdV2>
+
+# ******************************
+# INSTANCE
+# ******************************
+# instance constructor:
+#	MIRROR parameter:
+#				X - mirroring structure around the x-axis
+#				Y - mirroring structure around the y-axis
+#				N - unmirrored structure
+#
+# <structureToBeInstanced  x  y  MIRROR Magnification Rotation textgds>
+#
+
+# mirroring around x-axis
+<instanceMirrorXtest struct>
+<device 0 0 X 1 0 instance>
+# mag = 0.5, rotation = 90 degrees
+<device -15 0 X 0.5 90 instance>
+
+
+# mirroring around y-axis
+<instanceMirrorYtest struct>
+<device 0 0 Y 1 0 instance>
+
+
+
+
+# Test rectangular structure from (0,0) to (20,10) used for Symmetric extents
+<instanceSymmetricRectangle struct>
+0 0 20 10 0 rectangle
+
+# ******************************
+# INSTANCE SYMMETRIC
+# ******************************
+# instance constructor:
+#	MIRROR parameter:
+#				X - mirroring structure around the x-axis
+#				Y - mirroring structure around the y-axis
+#				N - unmirrored structure
+#
+# The bounding box of the GDS Structure is defined by the lower left(xLL,yLL) and upper right coordinates (xUR,yUR)
+#
+# <structureToBeInstanced  x  y  xLL yLL xUR yUR MIRROR Magnification Rotation textgds>
+#
+<instanceSymmetricTestStructure struct>
+<instanceSymmetricRectangle 0 0 0 0 20 10 N 1 0 instanceSym>

@@ -1,0 +1,16 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+4 layer
+
+# Example - MEMS Flexure With Comb Drive Elements
+
+<memsExample struct>
+# Flexure
+0 0 8.2 0.2 0.88 0.22 2.44 20 8 1.44 2.42 3.4 0.2 8.44 4.4 0.4 7 0 flexure2E
+# Top Comb
+-5.15 29.48 0.4 3.4 10.1 9.1 10 1.1 4.1 31 0.2 7 0 combDriveV1
+# Bottom Comb
+5.15 -29.48 0.4 3.4 10.1 9.1 10 1.1 4.1 31 0.2 7 180 combDriveV1
+

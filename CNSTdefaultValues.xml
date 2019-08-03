@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<CNSTdefaultParameters>
+    <Equipment>
+        <Menu Tool6300 = "JEOL6300">
+            <SubstratePosition>2A</SubstratePosition>
+            <SubstratePosition>2B</SubstratePosition>
+            <SubstratePosition>2C</SubstratePosition>
+            <SubstratePosition>2D</SubstratePosition>
+            <SubstratePosition>3A</SubstratePosition>
+            <SubstratePosition>3B</SubstratePosition>
+            <SubstratePosition>4A</SubstratePosition>
+            <SubstratePosition>6A</SubstratePosition>
+            <SubstratePositionDefault>4A</SubstratePositionDefault>
+            <ALDPosition>1</ALDPosition>
+            <ALDPosition>2</ALDPosition>
+            <ALDPosition>3</ALDPosition>
+            <ALDPosition>4</ALDPosition>
+            <ALDPosition>5</ALDPosition>
+            <ALDPosition>6</ALDPosition>
+            <ALDPosition>7</ALDPosition>
+            <ALDPosition>8</ALDPosition>
+            <ALDPosition>9</ALDPosition>
+            <ALDPosition>10</ALDPosition>
+            <ALDPositionDefault>3</ALDPositionDefault>
+            <SubstrateSize>4</SubstrateSize>
+            <CALPRM>500pA_Ap25</CALPRM>
+            <CALPRM>1nA_Ap60</CALPRM>
+            <CALPRM>2nA_Ap60</CALPRM>
+            <CALPRM>5nA_Ap60</CALPRM>
+            <CALPRM>10nA_Ap60</CALPRM>
+            <PATH>NRG0</PATH>
+            <PATH>NRG1</PATH>
+            <PATH>NRG2</PATH>
+            <PATH>NRG3</PATH>
+            <PATH>NRG4</PATH>
+            <STDCUR>2</STDCUR>
+            <Px>-40000</Px>
+            <Py>0</Py>
+            <Qx>40000</Qx>
+            <Qy>0</Qy>
+            <M1x>-4000</M1x>
+            <M1y>4000</M1y>
+            <M2x>4000</M2x>
+            <M2y>4000</M2y>
+            <M3x>4000</M3x>
+            <M3y>-4000</M3y>
+            <M4x>-4000</M4x>
+            <M4y>-4000</M4y>
+            <GLMPwidth>4.0</GLMPwidth>            
+            <GLMPlength>2000.0</GLMPlength>
+            <GLMQRSwidth>4.0</GLMQRSwidth>
+            <GLMQRSlength>2000.0</GLMQRSlength>
+            <CHMARKwidth>4.0</CHMARKwidth>
+            <CHMARKlength>60.0</CHMARKlength>            
+        </Menu>        
+    </Equipment>
+    <FileMenu>
+        <Menu FileInfo = "FILEINFO">
+            <OpenDirectory>/home/nathan/</OpenDirectory>
+            <SaveToDirectory>/home/nathan/</SaveToDirectory>
+        </Menu>
+    </FileMenu>
+</CNSTdefaultParameters>

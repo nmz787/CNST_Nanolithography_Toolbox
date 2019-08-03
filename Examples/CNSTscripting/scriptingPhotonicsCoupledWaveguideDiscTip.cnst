@@ -1,0 +1,54 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+4 layer
+
+# Various Coupled Waveguide-Disc-Tip Structures
+#
+# <x y radius numberOfSides dx dy wgWidth wgLength wgRadius sleeveWidth gap lowerEllipseRadiusYDirection distanceToEllipse cutWidth cutDistance thetaXY wgdcdV1>
+#
+<wgdcdV1 struct>
+<0 0 5.0 128 5.5 11 0.52 20.0 4.8 1.00 0.44 5.5 4.0 0.14 14.4 0 wgdcdV1>
+
+
+# <x y radius numberOfSides dx dy topBoxHeight topBoxWidth tipStructureHeight tipStructureWidth tipStructureBoxHeight tipStructureDistanceFromDY wgWidth wgLength wgRadius sleeveWidth gap cutWidth cutDistancePosition thetaXY wgdcdV2>
+#
+<wgdcdV2 struct>
+<0 0 5.0 128 5.5 11 22 10.4 4.0 3.0 0.9 7.25 0.52 25.0 4.8 1.00 0.44 0.10 20.00 0 wgdcdV2>
+
+
+# <x y radius numberOfSides dx dy boxExtentBelowGap topBoxHeight topBoxWidth wgWidth wgLength wgRadius sleeveWidth gap cutWidth cutDistancePosition distanceBetweenStructures thetaXY wgdcdV3>
+#
+<wgdcdV3 struct>
+<0 0 5.0 128 5.5 11 5.0 22 10.4 0.52 25.0 4.8 1.00 0.44 0.10 10.00 5.0 0 wgdcdV3>
+
+
+# <x y radius numberOfSides dx dy boxExtentBelowGap topBoxHeight triangleHeight wgWidth wgLength wgRadius sleeveWidth gap cutWidth cutDistancePosition distanceBetweenStructures thetaXY wgdcdV4>
+#
+<wgdcdV4 struct>
+<0 0 5.0 128 5.5 11 5.0 22 28 0.52 25.0 4.8 1.00 0.44 0.10 10.00 5.0 0 wgdcdV4>
+
+
+# <x y radius numberOfSides dx dy boxExtentBelowGap triangleHeight wgWidth wgLength wgRadius sleeveWidth gap cutWidth cutLowerDistancePositionDC1 cutLowerDistancePositionDC2 thetaXY wgdcdV5>
+#
+<wgdcdV5 struct>
+<0 0 5.0 128 5.5 11 5.0 28 0.52 25.0 4.8 1.00 0.44 0.10 8.00 20.0 0 wgdcdV5>
+
+
+# <x y radius numberOfSides dx dy boxExtentBelowGap heightOfTriangleCUT triangleHeight wgWidth wgLength wgRadius sleeveWidth gap cutWidth cutUpperDistancePositionDC1 cutLowerDistancePositionDC2 thetaXY wgdcdV6>
+#
+<wgdcdV6 struct>
+<0 0 5.0 128 10.5 2 5.0 4.0 28 0.52 25.0 4.8 1.00 0.44 0.10 8.00 20.0 0 wgdcdV6>
+
+
+# <x y radius radiusHalfCircles numberOfSides dx dy wgWidth wgLength wgRadius sleeveWidth gap cutWidth cutDistancePosition thetaXY wgdcdV7>
+#
+<wgdcdV7 struct>
+<0 0 6.0 7.0 128 4.4 11 0.52 20.0 4.8 1.00 0.44 0.14 14.4 0 wgdcdV7>
+
+
+# <x y midToEdgeOfBottomTaper bottomInteriorWidth frameWidth sleeve wavwguideTopWidth waveguideBottomWidth waveguideStraightLength waveguideTapperedLength gap cutWidth cutDistancePosition layer1 layer2 layer3 thetaXY wgdcdV8>
+#
+<wgdcdV8 struct>
+<0 0 5.0 15.00 10 1 0.52 0.18 5.0 50.0 2.0 0.16 40 175 2600 2 8 10 0 wgdcdV8>

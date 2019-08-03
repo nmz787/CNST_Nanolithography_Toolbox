@@ -1,0 +1,27 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# **** **** **** **** **** **** **** **** **** **** **** ****
+# Circle of radius r with a sinusoidal boundary
+# x y radius numberOfOscillations amplitudeOfOscillation numberOfSides THETArotationAboutXY circleWave
+#
+<circleWaveExample struct>
+0 0 5 8 0.5 100 0 circleWave
+
+
+
+
+# **** **** **** **** **** **** **** **** **** **** **** ****
+# Torus with inner and outer sinusoidal boundary in phase
+# x y innerRadius outerRadius numberOfOscillations amplitudeOfOscillation numberOfSides THETArotationAboutXY torusWaveIn
+#
+<torusWaveInExample struct>
+0 0 5 10 8 0.5 100 0 torusWaveIn
+
+
+#
+# Torus with inner and outer sinusoidal boundary 90 degrees out of phase
+# x y innerRadius outerRadius numberOfOscillations amplitudeOfOscillation numberOfSides THETArotationAboutXY torusWaveOut
+#
+<torusWaveOutExample struct>
+0 0 5 10 8 0.5 100 0 torusWaveOut

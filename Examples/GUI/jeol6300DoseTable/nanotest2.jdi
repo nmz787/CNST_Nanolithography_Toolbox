@@ -1,0 +1,5 @@
+MOD001: MODULAT (( 0, -13.7 ) , ( 1, -11.1 ) , ( 2, -8.4 )
+-     , ( 3, -5.7 ) , ( 4, -2.9 ) , ( 5,  0.0 ))
+
+; MINIMAL_RESOLUTION = 0.000125
+; MACHINE_TYPE = JBX-6300FS

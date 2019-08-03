@@ -1,0 +1,150 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+11 layer
+
+# Arrows
+# <x y arrowHeadHalfWidth arrowHeadLength width thetaXY arrowHead>
+# <x y arrowHeadHalfWidth arrowHeadLength width length thetaXY arrow>
+# <x y arrowHeadHalfWidth arrowHeadLength width length numberOf Elements thetaXY arrowHead>
+#
+<arrowHeadTest struct>
+# rotation = 0 degrees
+<0 0 15 40 4 0 arrowHead>
+# rotation = 44 degrees
+<40 -20 15 40 4 44 arrowHead>
+# rotation = 90 degrees
+<-80 10 15 40 4 90 arrowHead>
+
+<arrowTest struct>
+# rotation = 0 degrees
+<0 0 15 40 4 80 0 arrow>
+# rotation = 44 degrees
+<100 -20 15 40 4 80 44 arrow>
+# rotation =90 degrees
+<-40 40 15 40 4 80 90 arrow>
+
+<arrowArrayTest struct>
+# rotation = 0 degrees
+<0 -100 15 40 4 80 10 0 arrowArray>
+# rotation = 44 degrees
+<100 -100 15 40 4 80 14 45 arrowArray>
+# rotation =90 degrees
+<100 0 15 40 4 80 10 90 arrowArray>
+
+
+# Standard Alignment Marks
+#
+# Front-Front or Front-Back
+# <x y layerA layerB thetaXY alignFFFB1>
+# <x y layerA layerB thetaXY alignFFFB2>
+# <x y layerA layerB layerC thetaXY align3Level>
+# <x y layerA layerB vernierResolution INVERSEa INVERSEb inverseBoxLength inverseBoxWidth thetaXY alignVern>
+# <x y layerA layerB vernierResolution thetaXY alignVernLb1>
+# <x y layerA layerB vernierResolution thetaXY alignVernLb2>
+#
+<alignFFFB1Test struct>
+<0 0 1 2 0 alignFFFB1>
+# rotation = 55
+<-200 100 4 7 55 alignFFFB1>
+
+<alignFFFB2Test struct>
+<0 0 1111 2222 0 alignFFFB2>
+# rotation = 55
+<-200 100 4 7 55 alignFFFB2>
+
+<align3LevelTest struct>
+<0 0 1 2 3 0 align3Level>
+# rotation = 30
+<2500 -1000 1 2 3 30 align3Level>
+
+<alignVernLb1Test struct>
+# vernReso = 0.2
+<0 0 1 2 0.2 0 alignVernLb1>
+# vernReso = 0.2, rotation = 55
+<-2000 -2000 4 7 0.2 55 alignVernLb1>
+
+<alignVernLb2Test struct>
+# vernReso = 0.2
+<0 0 1 2 0.2 0 alignVernLb2>
+# vernReso = 0.2, rotation = 55
+<-500 200 4 7 0.2 55 alignVernLb2>
+
+<alignVernTest struct>
+# vernReso = 0.2
+<0 0 1 2 0.2 0 0 0 0 0 alignVern>
+# vernReso = 0.2, rotation = 55
+<-2000 -2000 4 7 0.2 0 0 0 0 55 alignVern>
+
+<alignVernTestInverse struct>
+# vernReso = 0.2, layerA inverted
+<-2000 -2000 1 2 0.2 1 0 2000 2000 0 alignVern>
+# vernReso = 0.2, layerB inverted
+<0 0 1 2 0.2 0 1 2000 2000 0 alignVern>
+# vernReso = 0.2, layerA and layerB inverted
+<2000 2000 1 2 0.2 1 1 2000 2000 0 alignVern>
+
+
+# Custom Alignment Marks
+# <x y length1 width length2 INVERSE inverseLength inverseWidth thetaXY alignCustC1>
+# <x y length1 width paddleLength paddleWidth INVERSE inverseLength inverseWidth thetaXY alignCustC2>
+# <x y length1 width paddleLength paddleWidth paddleExtensionLength INVERSE inverseLength inverseWidth thetaXY alignCustC3>
+# <x y length1 width length2 distanceFromCrossEdge boxLength boxWidth INVERSE inverseLength inverseWidth thetaXY alignCustC3>
+#
+4 layer
+<alignCustC1Test struct>
+<0 0 100 10 80 0 0 0 0 alignCustC1>
+# inverted
+<400 200 100 10 80 1 400 200 0 alignCustC1>
+# inverted, rotation = 55
+<400 -200 100 10 80 1 400 200 55 alignCustC1>
+
+<alignCustC2Test struct>
+<0 0 100 10 50 20 0 0 0 0 alignCustC2>
+# inverted
+<500 400 100 10 50 20 1 400 310 0 alignCustC2>
+# inverted, rotation = 55
+<500 -400 100 10 50 20 1 400 310 55 alignCustC2>
+
+<alignCustC3Test struct>
+<0 0 100 10 50 20 20 0 0 0 0 alignCustC3>
+# inverted
+<500 400 100 10 50 20 20 1 500 400 0 alignCustC3>
+# inverted, rotation = 55
+<500 -400 100 10 50 20 20 1 500 400 55 alignCustC3>
+
+<alignCustC4Test struct>
+<0 0 100 10 80 4 70 40 0 0 0 0 alignCustC4>
+# inverted
+<500 400 100 10 80 4 70 40 1 500 400 0 alignCustC4>
+# inverted, rotation = 55
+<500 -400 100 10 80 4 70 40 1 500 400 55 alignCustC4>
+
+
+# Simple Custom Verniers (for verniers with labels, see below example)
+# <x y layerA layerB length width pitch vernierResolution spaceBetweenTwoVerniers INVERSEA INVERSEB inverseLength inverseWidth thetaXY alignCustVern>
+<alignCustVernierTest struct>
+<0 0 4 7 40 4 8 0.2 2 0 0 0 0 0 alignCustVern>
+# inverted layerA
+<200 100 4 7 40 4 8 0.2 2 1 0 220 140 0 alignCustVern>
+# inverted layerA and layerB
+<200 280 4 7 40 4 8 0.2 2 1 1 220 140 0 alignCustVern>
+# inverted layerA and layerB, rotation = 55
+<200 -140 4 7 40 4 8 0.2 2 1 1 220 140 55 alignCustVern>
+
+
+# ******************************
+# VERNIERS with labels
+# ******************************
+# vernier constructor
+#
+# <x y layerA layerB vernierResolution ticks labelA labelB fontSize lineWidth lineLength pitch vernier>
+# Note: font resolution set by the shapeReso parameter
+#
+0.100 shapeReso
+<verniersWithLabelsTest struct>
+<0 0 1 4 0.01 11 Lyr1 Layer4 10 1 50 4 verniers>
+
+<200 -100 16 40 0.01 11 L16 Lyr40 10 1 50 4 verniers>
+

@@ -1,0 +1,54 @@
+0.001 gdsReso
+0.100 shapeReso
+
+4 layer
+
+# ******************************
+# FRACTALS
+# ******************************
+# 5 fractal constructors
+#
+# <shortStructName x y iterations length sierpinskiTriangle>
+# <shortStructName x y iterations length sierpinskiCarpet>
+# <shortStructName x y iterations length vicsekSaltire>
+# <shortStructName x y iterations length vicsekCross>
+# <shortStructName x y iterations length width curvedTree>
+#
+
+<fractalSTriangle struct>
+<zStriangle 10 44 6 20 sierpinskiTriangle>
+
+<fractalSCarpet struct>
+<zScarpet -10 -20 10 20 sierpinskiCarpet>
+
+<fractalVSaltire struct>
+<zVsaltire -10 20 10 20 vicsekSaltire>
+
+<fractalVCross struct>
+<zVcross 10 40 10 20 vicsekCross>
+
+<fractalCurvedTree struct>
+<zCurvedTree 10 40 10 22 8 curvedTree>
+
+#
+# TEST FRACTALS - to be finished at a later date
+#
+# <shortStructName x y iterations treeV1>
+# <shortStructName x y d angle ratio iterations treeV2>
+#
+<fractalzTreeV1 struct>
+<zTestTreeV1 0 0 10 treeV1>
+
+<fractalzTreeV2a struct>
+<zTestTreeV1a 0 0 .025 2.44 1.5 12 treeV2>
+
+<fractalzTreeV2b struct>
+<zTestTreeV1b 0 0 .125 -0.675 2.5 12 treeV2>
+
+<fractalzTreeV2c struct>
+<zTestTreeV1c 0 0 .02 5 14 20 treeV2>
+
+
+<testFractalInstance struct>
+<fractalCurvedTree 0 0 N 1 0 instance>
+

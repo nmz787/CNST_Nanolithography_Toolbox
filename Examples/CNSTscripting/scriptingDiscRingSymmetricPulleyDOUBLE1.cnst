@@ -1,0 +1,249 @@
+0.001 gdsReso
+0.001 shapeReso
+2 layer
+
+# ******** INFINITE DOUBLE STRAIGHT (R2 = infinity) RING DISC
+# straight waveguide above and below the ring and disc
+#
+# 2 constructors:
+#
+#<x y discRadius numberOfDiscSides gap waveGuideLength waveGuideWidth gap2 Length2 Width2 endCap discInfDS>
+#<x y ringInnerRadius ringWidth numberOfRingSides gap waveGuideLength waveGuideWidth gap2 Length2 Width2 endCap ringInfDS>
+#
+<discInfDSTest struct>
+<0 0 10 128 0.2 40 0.5 0.4 20 0.8 1 discInfDS>
+#
+<ringInfDSTest struct>
+<0 0 10 0.4 64 0.2 40 0.5 0.4 20 0.8 1 ringInfDS>
+
+
+# ******** INFINITE DOUBLE STRAIGHT (R2 = infinity) RING DISC INVERSE
+# straight INVERSE waveguide above and below the ring and disc
+#
+# 2 constructors:
+#
+# <x y discRadius numberOfDiscSides gap waveGuideLength waveGuideWidth exposureSleeveWidth gap2 length2 width2 sleeve2 endcap discInfInvDS>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveGuideLength waveGuideWidth exposureSleeveWidth gap2 length2 width2 sleeve2 endcap ringInfInvDS>
+#
+<INVERSEdiscInfInvDSTest struct>
+<0 0 10 128 0.2 40 0.5 1.0 0.1 20 0.2 0.4 1 discInfInvDS>
+#
+<INVERSEringInfInvDSTest struct>
+<0 0 10 0.4 64 0.2 40 0.5 1.0 0.1 20 0.2 0.4 1 ringInfInvDS>
+
+
+# ******** INFINITE DOUBLE STRAIGHT (R2 = infinity) RING DISC INVERSE POSITIVE TONE RESIST
+# straight INVERSE POSITIVE TONE RESIST waveguide above the ring and disc - used with positive tone resist
+#
+# 2 constructors:
+#
+# <x y discRadius ringDiscSleeveWidth numberOfDiscSides gap waveGuideLength waveGuideWidth  sleeveWidth gap2 length2 width2 sleeve2 endcap discInfInvPosDS>
+# <x y ringInnerRadius ringWidth ringDiscSleeveWidth numberOfRingSides gap waveGuideLength waveGuideWidth sleeveWidth gap2 length2 width2 sleeve2 endcap ringInfInvPosDS>
+#
+<InvPosDSdiscInfiniteTest struct>
+<0 0 10 2.0 128 4.0 100 0.4 2.5 0.4 80 0.2 4.0 1 discInfInvPosDS>
+#
+<InvPosDSringInfiniteTest struct>
+<0 0 10 0.5 4.0 128 0.8 100 0.4 5.5 0.4 80 0.2 4.0 1 ringInfInvPosDS>
+
+
+
+
+# SYMMETRIC RING DOUBLE STRAIGHT AND PULLEY (R2 = -Rdisc) DISC (R2 = -Rdisc) THETA SPECIFIED
+# waveguide bending upwards above the ring and disc with a coupling waveguide or pulley below
+#
+# 4 constructors:
+#
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight gap2 width2 length2 endcap discSymDS>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight gap2 width2 length2 endcap ringSymDS>
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight gap2 angle2 width2 length2 height2 endcap discSymPul>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight gap2 angle2 width2 length2 height2 endcap ringSymPul>
+#
+<discSymDSTest struct>
+<0 0 10 128 0.2 20.0 128 0.4 40 10 0.4 1 40 1 discSymDS>
+#
+<ringSymDSTest struct>
+<0 0 10 0.5 128 0.2 20.0 128 0.4 40 10 0.4 1 40 1 ringSymDS>
+#
+<discSymPulTest struct>
+<-10 20 10 128 0.2 20.0 128 0.4 40 10 0.4 20.0 1.0 50 10 1 discSymPul>
+#
+<ringSymPulTest struct>
+<-10 20 10 0.5 128 0.2 20.0 128 0.4 40 10 0.4 20.0 1.0 50 10 1 ringSymPul>
+
+
+
+# SYMMETRIC RING DOUBLE STRAIGHT AND PULLEY (R2 = -Rdisc) DISC (R2 = -Rdisc) COUPLING LENGTH SPECIFIED
+# waveguide bending upwards above the ring and disc with a coupling waveguide or pulley below
+#
+# 4 constructors:
+#
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight gap2 width2 length2 endcap discSymLCDS>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight gap2 width2 length2 endcap ringSymLCDS>
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight gap2 couplingLength2 width2 length2 height2 endcap discSymPul>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLength waveGuideHeight gap2 couplingLength2 width2 length2 height2 endcap ringSymPul>
+#
+<discSymLCDSTest struct>
+<0 0 10 128 0.2 17.27 128 0.4 40 10 0.4 1 40 1 discSymLCDS>
+#
+<ringSymLCDSTest struct>
+<0 0 10 0.5 128 0.2 24.085 128 0.4 40 10 0.4 1 40 1 ringSymLCDS>
+#
+<discSymLCPulTest struct>
+<-10 20 10 128 0.2 20.0 128 0.4 40 10 0.4 17.27 1.0 50 10 1 discSymLCPul>
+#
+<ringSymLCPulTest struct>
+<-10 20 10 0.5 128 0.2 20.0 128 0.4 40 10 0.4 24.085 1.0 50 10 1 ringSymLCPul>
+
+
+
+
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# SYMMETRIC RING DOUBLE STRAIGHT PULLEY(R2 = -Rdisc) DISC (R2 = -Rdisc)
+# waveguide bending upwards above the ring and disc with a coupling waveguide or pulley below
+#
+# 4 constructors:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection gap2 width2 length2 endcap discSymADS>
+# <x y ringOuterRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection gap2 width2 length2 endcap ringSymADS>
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection gap2 angle2 width2 length2 endcap discSymAPul>
+# <x y ringOuterRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection gap2 angle2 width2 length2 endcap ringSymAPul>
+#
+<discSymADStest struct>
+<10 20 5 88 0.1 45.0 44 0.5 22 0.4 1.1 20 1 discSymADS>
+#
+<ringSymADStest struct>
+<0 0 5 1.0 88 0.1 45.0 44 0.5 22 0.4 1.1 20 1 ringSymADS>
+#
+<discSymAPulTkest struct>
+<10 20 5 88 0.1 45.0 44 0.5 22 0.4 20 1.1 10 1 discSymAPul>
+#
+<ringSymAPulTest struct>
+<0 0 5 1.0 88 0.1 45.0 44 0.5 22 0.4 20 1.1 10 1 ringSymAPul>
+
+
+
+
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# SYMMETRIC RING DOUBLE STRAIGHT PULLEY(R2 = -Rdisc) DISC (R2 = -Rdisc) COUPLING LENGTH SPECIFIED
+# waveguide bending upwards above the ring and disc with a coupling waveguide or pulley below
+#
+# 4 constructors:
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection gap2 width2 length2 endcap discSymLCADS>
+# <x y ringOuterRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection gap2 width2 length2 endcap ringSymLCADS>
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection gap2 couplingLength width2 length2 endcap discSymLCAPul>
+# <x y ringOuterRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  waveGuideLengthStraightSection gap2 couplingLength2 width2 length2 endcap ringSymLCAPul>
+#
+<discSymLCADStest struct>
+<10 20 10 88 0.1 17.27 44 0.5 22 0.4 1.1 20 1 discSymLCADS>
+#
+<ringSymLCADStest struct>
+<-10 -20 5 1.0 88 0.1 24.085 44 0.5 22 0.4 1.1 20 1 ringSymLCADS>
+#
+<discSymLCAPulTkest struct>
+<10 20 10 88 0.1 17.27 44 0.5 22 0.4 17.27 1.1 10 1 discSymLCAPul>
+#
+<ringSymLCAPulTest struct>
+<10 -20 10 1.0 88 0.1 24.085 44 0.5 22 0.4 24.085 1.1 10 1 ringSymLCAPul>
+
+
+
+
+# INVERSE SYMMETRIC RING DOUBLE STRAIGHT PULLEY (R2 = -Rdisc) DISC (R2 = -Rdisc)
+#
+# 4 constructors:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 width2 sleeve2 length2 endcap discSymInvDS>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 width2 sleeve2 length2 endcap ringSymInvDS>
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 angle2 width2 sleeve2 length2 height2 endcap discSymInvPul>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 angle2 width2 sleeve2 length2 height2 endcap ringSymInvPul>
+#
+<INVERSEdiscSymDStest struct>
+<-10 -20 10 128 0.2 55.0 128 0.4 0.5 40 10 0.4 0.1 1.1 20 1 discSymInvDS>
+#
+<INVERSEringSymDStest struct>
+<0 0 10 0.6 128 0.2 55.0 128 0.4 0.5 40 10 0.4 0.1 1.1 20 1 ringSymInvDS>
+
+<INVERSEdiscSymPulTest struct>
+<-10 20 10 128 0.2 55.0 128 0.4 0.5 40 10 0.4 45.0 0.1 1.1 20 5.0 1 discSymInvPul>
+#
+<INVERSEringSymPulTest struct>
+<10 -20 10 0.6 128 0.2 55.0 128 0.4 0.5 40 10 0.4 45.0 0.1 1.1 20 5.0 1 ringSymInvPul>
+
+
+
+
+# INVERSE SYMMETRIC RING DOUBLE STRAIGHT PULLEY (R2 = -Rdisc) DISC (R2 = -Rdisc) COUPLING LENGTH SPECIFIED
+#
+# 4 constructors:
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 width2 sleeve2 length2 endcap discSymInvLCDS>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 width2 sleeve2 length2 endcap ringSymInvLCDS>
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 couplingLength2 width2 sleeve2 length2 height2 endcap discSymInvLCPul>
+# <x y ringInnerRadius ringWidth numberOfRingSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth exposureSleeveWidth waveGuideLength waveGuideHeight gap2 couplingLength2 width2 sleeve2 length2 height2 endcap ringSymInvLCPul>
+#
+<INVERSEdiscSymLCDStest struct>
+<-10 -20 10 128 0.2 17.27 128 0.4 0.5 40 10 0.4 0.1 1.1 20 1 discSymInvLCDS>
+#
+<INVERSEringSymLCDStest struct>
+<10 -20 10 0.6 128 0.2 24.085 128 0.4 0.5 40 10 0.4 0.1 1.1 20 1 ringSymInvLCDS>
+
+<INVERSEdiscSymLCPulTest struct>
+<-10 20 10 128 0.2 17.27 128 0.4 0.5 40 10 0.4 17.27 0.1 1.1 20 5.0 1 discSymInvLCPul>
+#
+<INVERSEringSymLCPulTest struct>
+<10 -20 10 0.6 128 0.2 24.085 128 0.4 0.5 40 10 0.4 24.085 0.1 1.1 20 5.0 1 ringSymInvLCPul>
+
+
+
+
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# ARC INVERSE SYMMETRIC RING DOUBLE STRAIGHT PULLEY (R2 > Rring) DISC (R2 > Rdisc)
+#
+# 4 constructors angle defined:
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 width2 sleeve2 length2 endcap discSymInvADS>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 width2 sleeve2 length2 endcap ringSymInvADS>
+# <x y discRadius numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 angle2 width2 sleeve2 length2 endcap discSymInvAPul>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap waveguideAngle numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 angle2 width2 sleeve2 length2 endcap ringSymInvAPul>
+#
+<INVdiscSymInvADSTest struct>
+<10 20 5 88 0.1 45.0 44 0.5 0.8 22 0.4 0.1 1.1 20 1 discSymInvADS>
+#
+<INVringSymInvADSTest struct>
+<10 -20 5 1.0 88 0.1 45.0 44 0.5 0.8 22 0.4 0.1 1.1 20 1 ringSymInvADS>
+#
+<INVdiscSymInvAPulTest struct>
+<10 20 5 88 0.1 45.0 44 0.5 0.8 22 0.4 15.0 0.1 1.1 20 1 discSymInvAPul>
+#
+<INVringSymInvAPulTest struct>
+<10 -20 5 1.0 88 0.1 45.0 44 0.5 0.8 22 0.4 15.0 0.1 1.1 20 1 ringSymInvAPul>
+
+
+
+
+# NOT USING BEZIER CURVES - USING AN ARC TO DEFINE WAVEGUIDE REGION
+#
+# ARC INVERSE SYMMETRIC RING DOUBLE STRAIGHT PULLEY (R2 > Rring) DISC (R2 > Rdisc) COUPLING LENGTH SPECIFIED
+#
+# 4 constructors angle defined:
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 width2 sleeve2 length2 endcap discSymInvLCADS>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 width2 sleeve2 length2 endcap ringSymInvLCADS>
+# <x y discRadius numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 couplingLength2 width2 sleeve2 length2 endcap discSymInvLCAPul>
+# <x y ringInnerRadius ringWidth numberOfDiscSides gap couplingLength numberOfSidesCouplingRegion waveGuideWidth  sleeveWidth waveGuideLengthStraightSection gap2 couplingLength2 width2 sleeve2 length2 endcap ringSymInvLCAPul>
+#
+<INVdiscSymInvLCADSTest struct>
+<10 20 10 88 0.1 17.27 44 0.5 0.8 22 0.4 0.1 1.1 20 1 discSymInvLCADS>
+#
+<INVringSymInvLCADSTest struct>
+<10 -20 10 1.0 88 0.1 24.085 44 0.5 0.8 22 0.4 0.1 1.1 20 1 ringSymInvLCADS>
+#
+<INVdiscSymInvLCAPulTest struct>
+<10 20 10 88 0.1 17.27 44 0.5 0.8 22 0.4 17.27 0.1 1.1 20 1 discSymInvLCAPul>
+#
+<INVringSymInvLCAPulTest struct>
+<10 -20 10 1.0 88 0.1 24.085 44 0.5 0.8 22 0.4 24.085 0.1 1.1 20 1 ringSymInvLCAPul>
+
+
+
+
+

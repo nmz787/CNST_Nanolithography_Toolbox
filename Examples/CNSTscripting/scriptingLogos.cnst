@@ -1,0 +1,24 @@
+0.001 gdsReso
+
+0.010 shapeReso
+
+4 layer
+
+
+# ******************************
+# CNST AND NIST LOGOS
+# ******************************
+# 3 logo constructors
+#
+# x y scale nistLogo
+# x y scale cnstLogo
+# x y scale nistCnstLogo
+#
+
+0 0 2 nistCNSTlogo
+
+1000 2000 2 cnstLogo
+
+-2500 -1500 2 nistLogo
+# ********************************
+

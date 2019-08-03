@@ -1,0 +1,294 @@
+# ************************************************************
+# ************************************************************
+#                       COMMENTS
+# ************************************************************
+# ************************************************************
+# Line comments begin with #
+
+#
+# at the beginning of the file the GDS resolution is set to a desired value in micrometers
+# default gdsReso value is 1nm
+0.001 gdsReso
+
+#
+# shapeReso parameter controls rendering resolution of vectorized shapes
+# default shapeReso value is 1nm
+0.001 shapeReso
+
+
+
+
+# ************************************************************
+# ************************************************************
+#                   STRUCTURES/CELLS
+# ************************************************************
+# ************************************************************
+#
+# ************************************************************
+# struct constructor
+#				- creates a GDS structure (cell) to place all subsequent elements
+#				- if already existing, then elements will be added to the structure
+# <structureName struct>
+
+<myEllipseStructure  struct>
+
+
+
+
+# ************************************************************
+# ************************************************************
+#                       LAYERS
+# ************************************************************
+# ************************************************************
+#
+# ************************************************************
+# layer constructor
+#				- sets up a layer for subsequent elements
+# layerNumber layer
+#
+44 layer
+
+
+
+# ************************************************************
+# ************************************************************
+#                     ELLIPSES/CIRCLES/n-GONS
+# ************************************************************
+# ************************************************************
+#
+# ************************************************************
+# ellipse constructor
+#				- creates an ellipse element
+# x  y  radiusX  radiusY  numberOfPoints  rotationDegreesAboutXY ellipse
+#
+# since layer 44 is defined the ellipse is cast to layer 44 and rotate by 22 degrees
+0 0 40 100 88 22.0 ellipse
+
+# create ellipse in layer 45
+45 layer
+100 80 40 40 44 0 ellipse
+#
+# both of the above shapes are placed into myEllipseStructure
+
+# ************************************************************
+# ************************************************************
+#                     VECTORIZED ELLIPSES/CIRCLES
+# ************************************************************
+# ************************************************************
+#
+# ************************************************************
+# ellipseVector constructor
+#				- creates an vectorized ellipse element
+#				- vertices are controlled by shapeReso parameter
+# x  y  radiusX  radiusY rotationDegreesAboutXY ellipse
+#
+0.01 shapeReso
+<ellipseVectorTest struct>
+0 0 1 2 0 ellipseVector
+8 layer
+-10 -4 1 2 60 ellipseVector
+
+# ************************************************************
+# ************************************************************
+#                         ARCS
+# ************************************************************
+# ************************************************************
+#
+<arcsPieShaped struct>
+10 20 2 10 350 40 88 0 arc
+4 layer
+0.001 shapeReso
+-5 7.4 2 10 300 90 0 arcVector
+
+
+# ************************************************************
+# ************************************************************
+#                         TORUS
+# ************************************************************
+# ************************************************************
+#
+<torusShapes struct>
+7 layer
+# ******************************
+# torus constructor
+#
+# x  y  innerRadius  outerRadius  startAngle endAngle  numberOfPoints  torus
+#				- x,y center points
+#
+
+# below are several torii
+0 0 824 900 22 88 140 torus
+-100 -200 40 60 0 360 55 torus
+
+# create another torus in a different layer
+14 layer
+200 -200 88 100 340 322 101 torus
+
+
+# ************************************************************
+# ************************************************************
+#         TORUS DEFINED BY WIDTH AND MIDPOINT RADIUS
+# ************************************************************
+# ************************************************************
+#
+# torusW
+#
+# x  y  midpointRadius  width  startAngle endAngle  numberOfPoints  torus
+#
+<torusWshape struct>
+0 0 10 0.5 44 180 101 torusW
+
+
+# ************************************************************
+# ************************************************************
+#                     RECTANGLE
+# ************************************************************
+# ************************************************************
+#
+<rectangleShape  struct>
+22 layer
+# ******************************
+# 3 rectangle constructors
+# 
+# x(lowerLeft)  y(lowerLeft)  x(upperRight)  y(upperRight)  rotationDegreesAboutLowerLeft rectangle
+# x(lowerLeft)  y(lowerLeft) length height rotationDegreesAboutLowerLeft rectangleLH
+# x(center)  y(center) length height rotationDegreesAboutCenter rectangleC
+#
+-5 20 0 28 0 rectangle
+15 20 20 28 45 rectangle
+#
+7 layer
+-5 8 4 8 0 rectangleLH
+15 8 4 8 22 rectangleLH
+#
+8 layer
+-14 -8 4 8 0 rectangleC
+14 -8 4 8 22 rectangleC
+
+
+
+# ************************************************************
+# ************************************************************
+#                     ROUNDED RECTANGLES
+# ************************************************************
+# ************************************************************
+#
+<roundedRectangleShape  struct>
+4 layer
+
+# ************************************************************
+# roundrect constructor
+#				- create rounded rectangle
+#				- points from round portion are defined using shapeReso parameter
+# x  y  width  height  xRadius  yRadius  rotationDegreesAboutXY roundrect
+#
+0.001 shapeReso
+-50 100 20 40 10 10 0 roundrect
+0 0 20 40 10 10 22 roundrect
+
+
+<roundedRectangleCenteredShape  struct>
+
+# ************************************************************
+# roundrectC constructor
+#				- create rounded rectangle centered at x,y
+#				- points from round portion are defined using shapeReso parameter
+# x  y  width  height  xRadius  yRadius  rotationDegreesAboutXY roundrect
+#
+-50 100 20 40 10 10 0 roundrectC
+0 0 20 40 10 10 22 roundrectC
+
+
+
+
+# ************************************************************
+# ************************************************************
+#                   POLYGONS (ROTATION INCLUDED)
+# ************************************************************
+# ************************************************************
+#
+<polygonShape  struct>
+49 layer
+# ******************************
+# polygon constructor
+#
+# x  y  radius  numberOfPoints  rotationAngle polygon
+#				- x,y center points
+#
+
+# creating a 5 pointed polygon - not rotated
+800.0 800.0 122.0 5 0 polygon
+
+
+
+
+# ************************************************************
+# ************************************************************
+#                   STAR SHAPES (ROTATION INCLUDED)
+# ************************************************************
+# ************************************************************
+#
+<starShape  struct>
+44 layer
+# ************************************************************
+# star constructor
+#
+# x  y  innerRadius  outerRadius  numberOfPoints  rotationAngle  star
+#				- x,y center points
+#
+
+# creating an 8 pointed star
+-200.0 800.0 150.0 50.0 14 0 star
+
+
+
+
+# ************************************************************
+# ************************************************************
+#                   cross
+# ************************************************************
+# ************************************************************
+# cross constructor
+#
+# x y width length rotationDegreesAboutXY cross
+#
+<myCrossShape struct>
+2 layer
+0 0 .2 5 0 cross
+#
+10 10 .2 5 22 cross
+
+
+
+
+# ************************************************************
+# ************************************************************
+#                   Lshape
+# ************************************************************
+# ************************************************************
+# Lshape constructor
+#
+# x y width1 length1 width2 length2 rotationDegreesAboutXY Lshape
+#
+<myLshape struct>
+-10 -10 1 10 0.5 4.4 0 Lshape
+-10 10 0.5 10 0.5 10 90 Lshape
+0 0 0.25 10 0.25 10 0 Lshape
+
+
+
+
+# ************************************************************
+# ************************************************************
+#                   Rectangular SU-Shapes
+# ************************************************************
+# ************************************************************
+# rectSUshape constructor
+#
+# x y length1 length2 length3 width rotationDegreesAboutXY rectSUshape
+#
+<mySUshape struct>
+7 layer
+0 0 10 10 20 0.5 0 rectSUshape
+-10 -10 -10 -10 20 0.5 0 rectSUshape
+

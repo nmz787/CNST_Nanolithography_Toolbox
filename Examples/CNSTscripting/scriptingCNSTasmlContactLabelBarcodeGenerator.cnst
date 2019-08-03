@@ -1,0 +1,46 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# ******** CNST ASML STEPPER BARCODE AND LABEL GENERATOR
+# CNST ASMLPAS5500 stepper barcode and label generator
+#
+# <{{labelText}} {{barcodeName}} MIRROR cnstASML>
+#
+# MIRROR parameter is an integer and if equal to any value other than 0, the resulting barcode-label frame will be mirrored
+# MIRROR = 0 represents unmirrored structure
+#
+<asml struct>
+110 layer
+<{{labelTest}} {{barcode4}} 0 cnstASML>
+
+<asmlMIRRORED struct>
+4 layer
+<{{labelTest}} {{barcode4}} 1 cnstASML>
+
+
+
+
+# ******** CNST ASML CONTACT ALIGNER LABELS
+# CNST contact alignmer labels for 5 inch and 7 inch masks
+#
+# <{{labelText}} MIRROR cnstContact5>
+# <{{labelText}} MIRROR cnstContact7>
+#
+# MIRROR parameter is an integer and if equal to any value other than 0, the resulting barcode-label frame will be mirrored
+# MIRROR = 0 represents unmirrored structure
+#
+<contact5Inch struct>
+7 layer
+<{{Contact5inch}} 0 cnstContact5>
+
+<contact5InchMIRRORED struct>
+11 layer
+<{{Contact5inch Mirrored}} 1 cnstContact5>
+
+<contact7Inch struct>
+7 layer
+<{{Contact7inch}} 0 cnstContact7>
+
+<contact7InchMIRRORED struct>
+11 layer
+<{{Contact7inch Mirrored}} 1 cnstContact7>

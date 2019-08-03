@@ -1,0 +1,57 @@
+0.001 gdsReso
+0.00100 shapeReso
+
+# PULLEY TEST CASES
+<discPulleyTestLC struct>
+4 layer
+<0 0 10 128 0.5 17.27 128 1 40 10 1 discPulleyLC>
+
+<ringPulleyTestLC struct>
+4 layer
+<0 0 10 0.5 128 0.5 24.085 128 1 40 10 1 ringPulleyLC>
+
+
+<INVERSEdiscPulleyTestLC struct>
+4 layer
+<0 0 10 128 0.5 17.592 128 0.4 0.5 40 10 0 discPulleyInvLC>
+
+<INVERSEringPulleyTestLC struct>
+4 layer
+<0 0 10 0.5 128 0.5 24.294 128 .2 0.5 40 10 0 ringPulleyInvLC>
+
+<InvPOSITIVEdiscPulleyTestLC struct>
+4 layer
+<0 0 84 8.0 128 0.2 132.57521 128 0.4 20.0 500 100 0 discPulleyInvPosLC>
+
+<InvPOSITIVEringPulleyTestLC struct>
+4 layer
+<0 0 84 0.5 8.0 128 0.2 176.767 128 0.4 20 500 100 0 ringPulleyInvPosLC>
+
+
+# SYMMETRIC TEST CASES
+<discSymmetricTestLC struct>
+4 layer
+<0 0 10 128 0.8 23.038 128 0.4 40 10 1 discSymmetricLC>
+
+<ringSymmetricTestLC struct>
+4 layer
+<0 0 10 0.5 128 0.8 18.064 128 0.4 40 10 1 ringSymmetricLC>
+
+
+<INVERSEdiscSymmetricTestLC struct>
+4 layer
+<0 0 10 128 0.2 22.829 128 0.4 0.5 40 10 0 discSymmetricInvLC>
+
+<INVERSEringSymmetricTestLC struct>
+4 layer
+<0 0 10 0.5 128 0.2 17.907 128 0.4 0.5 40 10 0 ringSymmetricInvLC>
+
+
+<InvPOSITIVEdiscSymmetricTestLC struct>
+4 layer
+<0 0 84 8.0 128 0.2 176.767 128 0.4 20 500 100 0 discSymmetricInvPosLC>
+
+<InvPOSITIVEringSymmetricTestLC struct>
+4 layer
+<0 0 84 0.5 8.0 128 0.2 132.575 128 0.4 20 500 100 0 ringSymmetricInvPosLC>
+

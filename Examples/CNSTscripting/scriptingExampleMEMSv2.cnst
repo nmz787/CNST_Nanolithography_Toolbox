@@ -1,0 +1,14 @@
+0.001 gdsReso
+0.001 shapeReso
+4 layer
+
+# Example - MEMS Flexure With Comb Drive Elements
+
+<circularSpringExample struct>
+# circular spring
+0 0 1 4 3.4 40 128 18 0.2 7 0 circularSpring
+# radial combs
+10 0 4 40 1 30 1.1 2.2 10 32 40 20 1 7 0 combRadialV2
+0 10 4 40 1 30 1.1 2.2 10 32 40 20 1 7 90 combRadialV2
+-10 0 4 40 1 30 1.1 2.2 10 32 40 20 1 7 180 combRadialV2
+0 -10 4 40 1 30 1.1 2.2 10 32 40 20 1 7 270 combRadialV2

@@ -1,0 +1,104 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+4 layer
+
+# **************** **************** **************** ****************
+# INTERACTING ARRAYS - Flattened structures
+# **************** **************** **************** ****************
+#
+# **** RECTANGULAR BEAMS ****
+#
+# MEMS Interacting Arrays of Rectangular Beams - Two arrays with N interacting rectangular beams
+# x y numberOfElements L1 W1 L2 W2 space hOverlap lengthSide hElectrode LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MARA
+<memsArrayMARAexample struct>
+0 0 100 400 10 200 10 2 40 100 250 20 20 4 32 4 30 7 0 MARA
+#
+<memsArrayMARA2example struct>
+# larger overlap, hOverlap = 180um
+0 0 100 400 10 200 10 2 180 100 250 20 20 4 32 4 30 7 0 MARA
+
+
+#
+# MEMS Interacting Arrays of Rectangular Beams with the top continuous electrode, and bottom electrodes with single beams
+# x y numberOfElements L1 W1 L2 W2 space lowerSpace hOverlap hElectrode LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MARC
+<memsArrayMARCexample struct>
+0 0 10 25 10 50 20 4.4 50 10 100 10 10 4 32 4 30 7 0 MARC
+
+#
+# MEMS Interacting Arrays of Rectangular Beams - 3 BEAM INTERACTION - top electrode with 2 beams and bottom electrodes with single beams
+# x y numberOfElements L1 W1 L2 W2 space lowerSpace hOverlap hElectrode LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MAR3
+<memsArrayMAR3example struct>
+0 0 10 25 10 50 20 4.4 50 10 100 10 10 4 32 4 30 7 0 MAR3
+
+#
+# MEMS Interacting Arrays of Rectangular Beams - 2 BEAM INTERACTION - top and bottom electrodes each with a single beam
+# x y numberOfElements L1 W1 L2 W2 space lowerSpace hOverlap hElectrode LS LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MAR2
+<memsArrayMAR2example struct>
+0 0 10 25 10 50 20 4.4 50 10 100 50 10 10 4 32 4 30 7 0 MAR2
+
+
+
+
+#
+# **** TRAPEZOIDAL BEAMS ****
+#
+# MEMS Interacting Arrays of Trapezoidal Beams - Two arrays with N interacting trapezoidal beams of the same length and widths
+# x y numberOfElements L Wa Wb space hOverlap lengthSide hElectrode LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MATALW
+<memsArrayMATALWexample struct>
+0 0 100 200 10 5 2 40 100 250 20 20 4 32 4 30 7 0 MATALW
+#
+<memsArrayMATALW2example struct>
+# larger overlap, hOverlap = 180um
+0 0 100 200 10 5 2 180 100 250 20 20 4 32 4 30 7 0 MATALW
+
+#
+# MEMS Interacting Arrays of Trapezoidal Beams - Two arrays with N interacting trapezoidal beams of the DIFFERENT length and widths
+# x y numberOfElements L1 W1a W1b L2 W2a W2b space hOverlap lengthSide hElectrode LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MATA
+<memsArrayMATAexample struct>
+0 0 100 100 10 5 200 20 10 2 40 100 250 20 20 4 32 4 30 7 0 MATA
+#
+# larger overlap, hOverlap = 180um
+<memsArrayMATA2example struct>
+0 0 100 100 10 5 200 20 10 2 80 100 250 20 20 4 32 4 30 7 0 MATA
+
+#
+# MEMS Interacting Arrays of Trapezoidal Beams with the top continuous electrode, and bottom electrodes with single beams
+# x y numberOfElements L1 W1a W1b L2 W2a W2b space lowerSpace hOverlap hElectrode LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MATC
+<memsArrayMATCexample struct>
+0 0 10 25 10 5 50 20 10 4.4 50 10 100 10 10 4 32 4 30 7 0 MATC
+
+#
+# MEMS Interacting Arrays of Trapezoidal Beams - 3 BEAM INTERACTION - top electrode with 2 beams and bottom electrodes with single beams
+# x y numberOfElements L1 W1a W1b L2 W2a W2b space lowerSpace hOverlap hElectrode LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MAT3
+<memsArrayMAT3example struct>
+0 0 10 25 10 5 50 20 10 4.4 50 10 100 10 10 4 32 4 30 7 0 MAT3
+
+#
+# MEMS Interacting Arrays of Rectangular Beams - 2 BEAM INTERACTION - top and bottom electrodes each with a single beam
+# x y numberOfElements L1 W1 L2 W2 space lowerSpace hOverlap hElectrode LS LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MAT2
+<memsArrayMAT2example struct>
+0 0 10 25 10 5 50 20 10 10.1 50 10 100 50 10 10 4 32 4 30 7 0 MAT2
+
+
+
+
+#
+# **** RECTANGULAR BEAMS **** - Same Number of Beams on Top and Bottom - CURVED and LINEARLY varying base
+#
+# MEMS Interacting Arrays of Rectangular Beams CURVED BASE - Two arrays with N interacting rectangular beams on top and bottom
+# x y numberOfElements L DELTA W space hOverlap lengthSide hElectrode LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MARACURVE
+<memsArrayMARACURVEexample struct>
+0 0 100 400 100 20 2 40 100 250 20 20 4 32 4 30 7 0 MARACURVE
+
+# MEMS Interacting Arrays of Rectangular Beams CURVED BASE - Two arrays with N interacting rectangular beams on top and bottom
+# x y numberOfElements L DELTA W space hOverlap lengthSide hElectrode LB HB diameter numSides layerFront layerBack layerMetal THETArotationAboutXY MARALINEAR
+<memsArrayMARALINEARexample struct>
+0 0 100 400 100 20 2 40 100 250 20 20 4 32 4 30 7 0 MARALINEAR
+
+
+
+
+
+

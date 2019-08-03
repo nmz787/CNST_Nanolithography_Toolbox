@@ -1,0 +1,26 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# BOOLEANS AND AFFINE TRANSFORMS OF GENERAL AREA COPIES
+
+<test4devices struct>
+
+# create an 3 sided ellipse in layer 11
+11 layer
+0 0 2 4 3 0 ellipse
+
+# create a octogon in layer 7
+7 layer
+1 0 1.5 1.5 8 0 ellipse
+
+# scriptingMultiFile8.cnst shall reside under directory called directoryName under the default directory defined by the <OpenDirectory> parameter in CNSTdefaultValues.xml - otherwise an error will appear within the log file - as will occur in this case (since directoryName does not exist)
+<directoryName\scriptingMultiFile8.cnst fileName>
+
+# calling file scriptingMultiFile8.cnst
+<scriptingMultiFile8 fileName>
+
+
+<test4dev2 struct>
+# 6 sides rotated -22 degrees
+1 0 1.5 8 6 -22 ellipse
+

@@ -1,0 +1,13 @@
+0.001 gdsReso
+0.001 shapeReso
+
+# BOOLEANS AND AFFINE TRANSFORMS OF GENERAL AREA COPIES
+
+<test8devices struct>
+
+# Thomas's structure
+11 layer
+<0 0 5.0 128 5.5 11 22 10.4 4.0 3.0 0.9 7.25 0.52 25.0 4.8 1.00 0.44 0.10 20.00 0 wgdcdV2>
+
+
+

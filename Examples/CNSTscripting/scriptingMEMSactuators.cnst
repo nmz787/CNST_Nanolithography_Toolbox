@@ -1,0 +1,228 @@
+0.001 gdsReso
+
+0.001 shapeReso
+
+4 layer
+
+# **************** **************** **************** ****************
+# BENT BEAMS
+# **************** **************** **************** ****************
+#
+# Single Bent Doubly Clamped Beam
+# x y width length1 length2 length3 baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY bentBeam
+<bentBeamExample struct>
+7 layer
+0 0 1 20 10 5 16 8 0.2 11 0 bentBeam
+
+#
+# Guckel Ring Array Structure
+# x y width length1 length2 length3 length4 centerBeamHeightOffset pitch numberOfElements centerBeamWidth dimpleHeight dimpleWidth dimpleGDSlayer baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY bentBeamArray
+<bentBeamArrayExample struct>
+7 layer
+0 0 1 20 10 5 6.5 7 2 22 4.4 1.1 1.2 30 8 0.2 11 0 bentBeamArray
+
+
+# **************** **************** **************** ****************
+# HUB WITH STRAIGHT AND CIRCULAR SPRINGS
+# **************** **************** **************** ****************
+#
+# Hub with STRAIGHT spring
+# x y width radiusOfCentralHub ringWidth radiusOfRing numberOfSidesForCircularShapes numberOfBeamElements anchorOverlapWidth anchorGDSLayer THETArotationAboutXY straightSpring
+<straightSpringExample struct>
+7 layer
+0 0 0.5 4 1.1 15 128 18 0.2 11 0 straightSpring
+
+#
+# Hub with CIRCULAR spring
+# x y width radiusOfCentralHub ringWidth radiusOfRing numberOfSidesForCircularShapes numberOfBeamElements anchorOverlapWidth anchorGDSLayer THETArotationAboutXY circularSpring
+<circularSpringExample struct>
+7 layer
+0 0 0.5 4 1.1 15 128 18 0.2 11 0 circularSpring
+
+
+# **************** **************** **************** ****************
+# HUB WITH STRAIGHT AND CIRCULAR SPRINGS WITH ELECTRODES
+# **************** **************** **************** ****************
+#
+# Hub with STRAIGHT spring and ELECTRODES
+# x y width radiusOfCentralHub ringWidth radiusOfRing numberOfSidesForCircularShapes numberOfBeamElements gap outerRingElectrodeWidth numberOfElectrodes betaGapFractionOfElectrode anchorOuterElectrodeOverlapWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY straightSpringE
+<straightSpringElectrodesExample struct>
+0 0 0.5 4 1.1 15 128 8 0.55 5 8 0.25 1 0.2 11 0 straightSpringE
+
+#
+# Hub with CIRCULAR spring and ELECTRODES
+# x y width radiusOfCentralHub ringWidth radiusOfRing numberOfSidesForCircularShapes numberOfBeamElements gap outerRingElectrodeWidth numberOfElectrodes betaGapFractionOfElectrode anchorOuterElectrodeOverlapWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY circularSpringE
+<circularSpringElectrodesExample struct>
+7 layer
+0 0 0.5 4 1.1 15 128 8 0.55 5 8 0.25 1 0.2 11 0 circularSpringE
+
+
+# **************** **************** **************** ****************
+# BIMORPH ACTUATOR
+# **************** **************** **************** ****************
+#
+# BiMorph Actuator
+# x y width1 width2 width3 width4 length1 length2 length3 pitch dimpleHeight dimpleWidth dimpleGDSLayer baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY biMorph
+<biMorphExample struct>
+0 0 0.2 0.3 0.4 1.0 4 40 8 1 0.4 0.2 30 7 10 0.2 11 0 biMorph
+
+
+# **************** **************** **************** ****************
+# FOLDED SPRINGS
+# **************** **************** **************** ****************
+#
+# Folded Spring 1A
+# x y width length1 length2 pitch amplitude numberOfPeriods baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring1A
+<foldedSpring1AExample struct>
+0 0 0.4 2 4 1.5 10 4 7 10 0.2 11 0 foldedSpring1A
+
+#
+# Folded Spring 1B
+# x y width length1 length2 pitch amplitude numberOfPeriods baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring1B
+<foldedSpring1BExample struct>
+0 0 0.4 2 4 1.5 10 4 7 10 0.2 11 0 foldedSpring1B
+
+#
+# Folded Spring 2A
+# x y width length1 length2 pitch amplitude numberOfPeriods baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring2A
+<foldedSpring2AExample struct>
+0 0 0.4 2 4 1.5 10 4 7 10 0.2 11 0 foldedSpring2A
+
+#
+# Folded Spring 2B
+# x y width length1 length2 pitch amplitude numberOfPeriods baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring2B
+<foldedSpring2BExample struct>
+0 0 0.4 2 4 1.5 10 4 7 10 0.2 11 0 foldedSpring2B
+
+#
+# Folded Spring 2C
+# x y width length1 length2 pitch amplitude numberOfPeriods baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring2C
+<foldedSpring2CExample struct>
+0 0 0.4 2 4 0.88 20 44 7 10 0.2 11 0 foldedSpring2C
+
+#
+# Folded Spring 2D
+# x y width length1 length2 pitch amplitude numberOfPeriods baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring2D
+<foldedSpring2DExample struct>
+0 0 0.4 2 4 0.88 20 44 7 10 0.2 11 0 foldedSpring2D
+
+#
+# Folded Spring 2E
+# x y width length1 length2 pitch amplitude numberOfPeriods numberOfSides baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring2E
+<foldedSpring2EExample struct>
+0 0 0.4 2 4 0.88 20 8 64 7 10 0.2 11 0 foldedSpring2E
+
+#
+# Folded Spring 2F
+# x y width length1 length2 pitch amplitude numberOfPeriods numberOfSides baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring2F
+<foldedSpring2FExample struct>
+0 0 0.4 2 4 0.88 20 8 64 7 10 0.2 11 0 foldedSpring2F
+
+#
+# Folded Spring 2G
+# x y width length1 length2 pitch amplitude numberOfPeriods numberOfSides baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring2G
+<foldedSpring2GExample struct>
+0 0 0.4 2 4 0.88 20 8 64 7 10 0.2 11 0 foldedSpring2G
+
+#
+# Folded Spring 2H
+# x y width length1 length2 pitch amplitude numberOfPeriods numberOfSides baseHeight baseWidth anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring2H
+<foldedSpring2HExample struct>
+0 0 0.4 2 4 0.88 20 8 64 7 10 0.2 11 0 foldedSpring2H
+
+#
+# Folded Spring 2I
+# x y width length1 length2 pitch amplitude numberOfPeriods numberOfSides electrodeRadius anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring2I
+<foldedSpring2IExample struct>
+0 0 0.4 2 4 0.88 20 10 64 3.5 0.2 11 0 foldedSpring2I
+
+#
+# Folded Spring 2J
+# x y width length1 length2 pitch amplitude numberOfPeriods numberOfSides electrodeRadius anchorOverlapWidth anchorGDSLayer THETArotationAboutXY foldedSpring2J
+<foldedSpring2JExample struct>
+0 0 0.4 2 4 0.88 20 10 64 3.5 0.2 11 0 foldedSpring2J
+
+
+# **************** **************** **************** ****************
+# COMB AND DRIVE ELEMENTS
+# **************** **************** **************** ****************
+#
+# Linear Comb Drive V1
+# x y widthOfCombFingers widthOfLowerBase lengthOfFinger overlapOfFingers numberOfFingers pitch baseHeight upperElectrodeGDSLayer anchorOverlapWidth anchorGDSLayer THETArotationAboutXY combDriveV1
+<combDriveV1Example struct>
+11 layer
+0 0 0.4 3.4 10.1 9.1 10 1.1 4.1 31 0.2 7 0 combDriveV1
+
+#
+# Linear Drive Element V1
+# x y widthOfRotorFingers lengthOfRotorFinger heightOfTheRotor distanceFromTheRotorEdgeToFirstFinger gap numberOfElectrodes pitch baseHeight baseWidth pitchOfRotorFingers rotorGDSLayer anchorOverlapWidth anchorGDSLayer THETArotationAboutXY linearDriveV1
+<linearDriveV1Example struct>
+0 0 1.2 3.2 5 8.8 0.22 17 2.2 5.5 0.8 4.1 31 0.2 7 0 linearDriveV1
+
+#
+# Radial Comb Drive V1
+# x y widthTopElectrode radialTopElectrodeDistance  widthBottomElectrode radialBottomElectrodeDistance widthOfCombFingers gap numberOfCombFingers numberOfSidesForArcCombs openingAngle angleOverlap anchorOverlapWidth anchorGDSLayer THETArotationAboutXY combRadialV1
+<combRadialV1Example struct>
+11 layer
+0 0 4 20 1 10 1.1 2.2 10 32 55 20 1 7 0 combRadialV1
+
+#
+# Radial Comb Drive V2 - double radial comb
+# x y widthTopElectrode radialTopElectrodeDistance  widthBottomElectrode radialBottomElectrodeDistance widthOfCombFingers gap numberOfCombFingers numberOfSidesForArcCombs openingAngle angleOverlap anchorOverlapWidth anchorGDSLayer THETArotationAboutXY combRadialV2
+<combRadialV2Example struct>
+11 layer
+0 0 4 20 1 10 1.1 2.2 10 32 55 20 1 7 0 combRadialV2
+
+
+
+
+# **************** **************** **************** ****************
+# GEARS
+# **************** **************** **************** ****************
+#
+# Gear - square gear
+# x y radius gearWidth gearHeight numberOfGears THETArotationAboutXY gear
+<gearExample struct>
+11 layer
+0 0 10 5 1 18 64 0 gear
+
+#
+# Gear - square gear with triangular ends
+# x y radius gearWidth gearHeight numberOfGears triangleWidth THETArotationAboutXY gear
+<gearTexample struct>
+11 layer
+0 0 10 5 1 18 0.4 64 0 gearT
+
+
+
+
+# **************** **************** **************** ****************
+# BOLOMETERS
+# **************** **************** **************** ****************
+#
+# L-Shaped Bolometer
+# x y w1 w2 w3 g1 g2 g3 L1 L2 r ri numSides a b c d e f La Lb Lc Ld Le Lf THETArotationAboutXY bolometerL
+<bolometerLshaped struct>
+0 0 2 4 3 10 8 2 40 120 2 2 44 4 5 6 10 1 20 1 2 3 4 5 6 0 bolometerL
+
+#
+# U-Shaped Bolometer
+# x y w1 w2 w3 g1 g2 g3 L1 L2 r ri numSides a b c d e f La Lb Lc Ld Le Lf THETArotationAboutXY bolometerL
+<bolometerUshaped struct>
+0 0 2 3 3 10 8 2 120 40 2 2 44 4 5 6 10 1 20 1 2 3 4 5 6 0 bolometerU
+
+
+
+
+# **************** **************** **************** ****************
+# SUSPENDED FLUID CELL
+# **************** **************** **************** ****************
+#
+# Suspended Fluid Cell
+# x y w1 w2 w2T w3 w4 L1 L2 r r1 r2 r3 numSides a b c d e f g h i La Lb Lc Ld Le Lf THETArotationAboutXY fluidCell
+<fluidCellExample struct>
+0 0 0.8 2 20 1 2.2 80 22 4 4 10 15 88 50 4 5.5 4.4 10 2 15 2.0 0.5 1 2 3 4 5 6 0 fluidCell
+
+
+
+
